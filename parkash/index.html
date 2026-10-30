@@ -146,6 +146,46 @@ section{padding:88px 0}
 .gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(35,39,46,.85);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
 @media (max-width:820px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery figure{aspect-ratio:1}.gallery figure:first-child{grid-column:1/3;grid-row:auto;aspect-ratio:16/10}}
 
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:22px;scrollbar-width:thin}
+.tabs button{flex:none;font:inherit;font-weight:600;font-size:14px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--charcoal);color:#fff;border-color:var(--charcoal)}
+.panel{display:grid;gap:12px}
+.panel[hidden]{display:none}
+.sku{display:flex;justify-content:space-between;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:12px;padding:18px 22px}
+.sku h4{font-size:17px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none}
+.chips li{font-size:13px;background:var(--bg-alt);border:1px solid var(--line);border-radius:6px;padding:3px 9px;color:var(--muted)}
+.sku-side{display:flex;align-items:center;gap:18px;flex:none;text-align:right}
+.price{font-weight:800;font-size:19px;color:var(--ink);white-space:nowrap}
+.price small{display:block;font-weight:500;font-size:12.5px;color:var(--muted)}
+.btn-sm{padding:10px 16px;font-size:14px}
+.fine{font-size:13px;color:var(--muted);margin-top:14px}
+.ratings{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:22px}
+.rating{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;text-decoration:none}
+.rating b{font-size:30px;font-weight:800;line-height:1}
+.rating b span{color:var(--orange);font-size:22px;margin-left:2px}
+.rating strong{display:block}
+.rating small{color:var(--muted);font-size:13px}
+.buyers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.buyers div{background:var(--charcoal);color:#fff;border-radius:var(--radius);padding:22px}
+.stars{color:var(--orange);letter-spacing:2px}
+.buyers p{font-weight:600;margin:8px 0 4px}
+.buyers small{color:#AEB4BD}
+.promise{list-style:none;display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px}
+.promise li{font-weight:600;font-size:15px;padding-left:24px;position:relative}
+.promise li::before{content:"";position:absolute;left:0;top:5px;width:14px;height:14px;border-radius:50%;background:var(--orange);box-shadow:inset 0 0 0 4px #fff,0 0 0 1px var(--orange)}
+.visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.hours{margin:24px 0;background:#fff;border-radius:var(--radius);padding:6px 20px}
+.hours div{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line);font-size:15px}
+.hours div:first-child{border-top:0}
+.hours dt{color:var(--muted)}
+.hours dd{font-weight:600}
+.actions-row{display:flex;gap:12px;flex-wrap:wrap}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--bg-alt);box-shadow:0 20px 40px rgba(35,39,46,.08)}
+.map iframe{display:block;width:100%;height:100%;min-height:380px;border:0}
+@media (max-width:980px){.ratings,.buyers{grid-template-columns:1fr}.visit{grid-template-columns:1fr}}
+@media (max-width:640px){.sku{flex-direction:column;align-items:stretch}.sku-side{justify-content:space-between;text-align:left}}
+
 /* why */
 .why{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .why div{padding:26px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
@@ -283,11 +323,11 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
     <nav>
       <ul id="menu" onclick="if(event.target.tagName==='A')this.classList.remove('open')">
         <li><a href="#products">Products</a></li>
+        <li><a href="#catalog">Catalogue</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#why">Why Parkash</a></li>
-        <li><a href="#how">How to order</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#export">Export</a></li>
-        <li><a href="#company">Company</a></li>
+        <li><a href="#visit">Visit us</a></li>
         <li><a class="btn btn-primary" href="#contact">Request a quote</a></li>
       </ul>
     </nav>
@@ -316,10 +356,10 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
 
 <div class="stats">
   <div class="wrap">
-    <div class="stat"><b><i>9+</i> categories</b><span>Complete poultry shed range</span></div>
-    <div class="stat"><b>Direct</b><span>From the manufacturer</span></div>
+    <div class="stat"><b>Since <i>2018</i></b><span>Making poultry equipment</span></div>
+    <div class="stat"><b><i>4.4</i>&#9733; Google</b><span>Rated by farm buyers</span></div>
     <div class="stat"><b>Made in <i>India</i></b><span>Safidon, Jind, Haryana</span></div>
-    <div class="stat"><b>Pvt. Ltd.</b><span>GST registered company</span></div>
+    <div class="stat"><b><i>25+</i> products</b><span>Across 9 categories</span></div>
   </div>
 </div>
 
@@ -328,77 +368,90 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
     <div class="head">
       <span class="eyebrow">Product range</span>
       <h2>Everything a poultry shed needs</h2>
-      <p class="lead">Choose a category to see sizes and details in our catalogue. For custom sizes or bulk quantities, send an enquiry and we will quote.</p>
+      <p class="lead">Choose a category to see specifications and indicative prices. For custom sizes or bulk quantities, send an enquiry and we will quote.</p>
     </div>
     <div class="grid">
-      <a class="card" href="https://www.parkashindustry.com/chicken-cage.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="chicken-cage">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2023/9/347712571/XX/FY/PG/60024860/chicken-cage-500x500.jpg" alt="Layer chicken cages with hens" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Chicken cages</h3>
         <p>Durable cages for growing and housing chickens.</p>
         <ul><li>Poultry chicken cage</li><li>Chicken brooder cage</li><li>Galvanized iron chicken cage</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/poultry-cage.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="poultry-cage">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2025/9/545536049/MI/MQ/LZ/60024860/chicken-cage-500x500.jpg" alt="Tiered poultry cage system" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Poultry cages</h3>
         <p>Tiered cage systems for every growth stage.</p>
         <ul><li>Layer poultry cage</li><li>Poultry chicks cage</li><li>Poultry grower cage</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/chain-link-fencing.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="chain-link-fencing">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2023/9/347711917/HQ/ZH/UW/60024860/chain-link-fencing-500x500.jpg" alt="Galvanised chain link fencing" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Chain link fencing</h3>
         <p>Farm and boundary fencing in wire mesh.</p>
         <ul><li>Chain link fencing</li><li>Wire mesh fence</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/cooling-pad.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="cooling-pad">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2024/12/476400797/UG/TG/DG/60024860/evaporative-cooling-pad-500x500.jpg" alt="Evaporative cooling pads on a poultry shed" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Cooling pads</h3>
         <p>Evaporative cooling to keep sheds comfortable in summer.</p>
         <ul><li>Poultry cooling pad</li><li>Evaporative cooling pad</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/poultry-exhaust-fan.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="poultry-exhaust-fan">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2023/8/333916413/SL/LI/YK/60024860/cooling-fan-500x500.jpg" alt="Poultry exhaust fan" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Exhaust fans</h3>
         <p>Ventilation for clean air in poultry houses.</p>
         <ul><li>Poultry exhaust fan</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/poultry-feeder.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="poultry-feeder">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317243314/AH/VW/NO/60024860/poultry-feeder-500x500.jpg" alt="Poultry chicken feeder" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Poultry feeders</h3>
         <p>Feeders that reduce wastage and keep feed clean.</p>
         <ul><li>Poultry chicken feeders</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/power-sprayer.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="power-sprayer">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2024/12/476401543/QO/LG/VO/60024860/htp-pump-500x500.jpg" alt="HTP power sprayer pump" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Power sprayers</h3>
         <p>Sprayers for sanitation and farm use.</p>
         <ul><li>Stainless steel sprayer</li><li>HTP spray pump</li><li>HTP power sprayer</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/square-pipe.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="square-pipe">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2023/8/333917566/EI/IP/KE/60024860/square-pipe-500x500.jpg" alt="PVC square pipes" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Square pipe</h3>
         <p>PVC square pipe for poultry setups.</p>
         <ul><li>PVC square pipe, poultry</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
-      <a class="card" href="https://www.parkashindustry.com/rubber-mats.html" target="_blank" rel="noopener">
+      <a class="card" href="#catalog" data-cat="rubber-mats">
         <div class="ph"><img src="https://5.imimg.com/data5/SELLER/Default/2023/8/333915834/UV/YS/QN/60024860/rubber-mat-for-poultry-cages-500x500.jpg" alt="Rubber mat for poultry cages" loading="lazy" width="500" height="500" onerror="this.parentNode.classList.add('noimg')"></div>
         <h3>Rubber mats &amp; bird cages</h3>
         <p>Mats for poultry cages and shed floors.</p>
         <ul><li>Rubber mat for poultry cages</li><li>Bird cage range</li></ul>
-        <span class="more">View details &rarr;</span>
+        <span class="more">Specs &amp; price &rarr;</span>
       </a>
     </div>
   </div>
 </section>
 
-<section id="gallery" class="alt">
+<section id="catalog" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Specifications &amp; prices</span>
+      <h2>Product catalogue</h2>
+      <p class="lead">Indicative ex-works prices. Final price depends on size, quantity and steel rates, so send an enquiry for an exact quote.</p>
+    </div>
+    <div class="tabs" role="tablist"><button role="tab" data-cat="chicken-cage" aria-selected="true">Chicken cages</button><button role="tab" data-cat="poultry-cage" aria-selected="false">Poultry cages</button><button role="tab" data-cat="chain-link-fencing" aria-selected="false">Chain link fencing</button><button role="tab" data-cat="cooling-pad" aria-selected="false">Cooling pads</button><button role="tab" data-cat="poultry-exhaust-fan" aria-selected="false">Exhaust fans</button><button role="tab" data-cat="poultry-feeder" aria-selected="false">Poultry feeders</button><button role="tab" data-cat="power-sprayer" aria-selected="false">Power sprayers</button><button role="tab" data-cat="square-pipe" aria-selected="false">Square pipe</button><button role="tab" data-cat="rubber-mats" aria-selected="false">Rubber mats</button></div>
+    <div class="panel" role="tabpanel" data-cat="chicken-cage"><article class="sku"><div class="sku-main"><h4>Poultry Chicken Cage</h4><ul class="chips"><li>Galvanized iron, hot dip</li><li>H-type layer cage</li><li>8–10 birds per cage</li><li>For hens, layer farms</li></ul></div><div class="sku-side"><div class="price">₹90 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Chicken Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Chicken Brooder Cage</h4><ul class="chips"><li>California cage system</li><li>2 tier, galvanized iron</li><li>15 × 17.5 × 15 in</li><li>2 birds per box, breeder use</li></ul></div><div class="sku-side"><div class="price">₹90 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Chicken Brooder Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Galvanized Iron Chicken Cage</h4><ul class="chips"><li>California cage, layer</li><li>Galvanized iron, hot dip</li><li>5 birds per box</li><li>Hatchery & commercial farms</li></ul></div><div class="sku-side"><div class="price">₹105 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Galvanized Iron Chicken Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>GI Chicken Cage</h4><ul class="chips"><li>Layer cage, GI</li><li>5 birds per box</li><li>Commercial & breeding farms</li></ul></div><div class="sku-side"><div class="price">₹95 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="GI Chicken Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Chicken Farming Cage</h4><ul class="chips"><li>Layer cage, galvanized iron</li><li>3 tier</li><li>14 × 21 × 15 in</li><li>5 birds per box</li></ul></div><div class="sku-side"><div class="price">₹90 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Chicken Farming Cage">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="poultry-cage" hidden><article class="sku"><div class="sku-main"><h4>Layer Poultry Cage</h4><ul class="chips"><li>A-type layer cage</li><li>3 tier, metal</li><li>For breeder & layer birds</li></ul></div><div class="sku-side"><div class="price">₹95 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Layer Poultry Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Poultry Chicks Cage</h4><ul class="chips"><li>Brooder cage, zinc plated</li><li>3 tier</li><li>14 × 24 × 15 in</li><li>6 chicks per box</li></ul></div><div class="sku-side"><div class="price">₹95 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Chicks Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Poultry Grower Cage</h4><ul class="chips"><li>A-type, zinc plated</li><li>2 tier</li><li>2 birds per box</li></ul></div><div class="sku-side"><div class="price">₹85 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Grower Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Steel Poultry Chicks Cage</h4><ul class="chips"><li>A-type, zinc plated</li><li>2 tier</li><li>15 × 21 × 15 in</li></ul></div><div class="sku-side"><div class="price">₹80 / piece<small>MOQ: 1,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Steel Poultry Chicks Cage">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Poultry Grower Cage (MS)</h4><ul class="chips"><li>Mild steel, A-type</li><li>2 tier</li><li>Blue finish</li></ul></div><div class="sku-side"><div class="price">₹85 / piece<small>MOQ: 5,000 pcs</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Grower Cage (MS)">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="chain-link-fencing" hidden><article class="sku"><div class="sku-main"><h4>Chain Link Fencing</h4><ul class="chips"><li>GI wire, galvanized</li><li>3 × 3 in mesh</li><li>10 gauge</li><li>5 ft height</li></ul></div><div class="sku-side"><div class="price">₹100 / kg<small>MOQ: 1,000 kg</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Chain Link Fencing">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Chain Link Fencing (fine mesh)</h4><ul class="chips"><li>GI wire, galvanized</li><li>1 × 1 in mesh</li><li>16 gauge</li><li>10 ft height</li></ul></div><div class="sku-side"><div class="price">₹15 / sq ft<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Chain Link Fencing (fine mesh)">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Galvanized Wire Fencing</h4><ul class="chips"><li>GI, galvanized</li><li>250 m roll</li><li>40–275 GSM coating</li></ul></div><div class="sku-side"><div class="price">₹100 / kg<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Galvanized Wire Fencing">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Wire Mesh Fence</h4><ul class="chips"><li>Chain link, GI</li><li>3 in mesh</li><li>10 gauge (3.0 mm)</li><li>100 GSM</li></ul></div><div class="sku-side"><div class="price">₹100 / kg<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Wire Mesh Fence">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>GI Chain Link Mesh Fence</h4><ul class="chips"><li>GI, 100 GSM</li><li>1 × 1 in mesh</li><li>16 gauge (1.6 mm)</li><li>6 ft height</li></ul></div><div class="sku-side"><div class="price">₹16 / sq ft<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="GI Chain Link Mesh Fence">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="cooling-pad" hidden><article class="sku"><div class="sku-main"><h4>Evaporative Cooling Pad</h4><ul class="chips"><li>Honeycomb pad, 45° × 45° flute</li><li>150 mm thick</li><li>1800 × 300 mm panels</li></ul></div><div class="sku-side"><div class="price">₹350 / sq ft<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Evaporative Cooling Pad">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Poultry Cooling Pad</h4><ul class="chips"><li>Up to 100 mm thick</li><li>Brown pad, metal frame</li><li>Made in India</li></ul></div><div class="sku-side"><div class="price">₹280 / sq ft<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Cooling Pad">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="poultry-exhaust-fan" hidden><article class="sku"><div class="sku-main"><h4>Poultry Exhaust Fan</h4><ul class="chips"><li>50 in fan</li><li>1.5 HP, 3 phase motor</li><li>GI steel body</li></ul></div><div class="sku-side"><div class="price">₹25,000 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Exhaust Fan">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="poultry-feeder" hidden><article class="sku"><div class="sku-main"><h4>Poultry Chicken Feeder</h4><ul class="chips"><li>Circular, plastic</li><li>4–8 kg feed</li><li>Serves about 10 birds</li></ul></div><div class="sku-side"><div class="price">₹350 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Poultry Chicken Feeder">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="power-sprayer" hidden><article class="sku"><div class="sku-main"><h4>HTP Power Sprayer</h4><ul class="chips"><li>1.5 HP petrol engine</li><li>Portable</li><li>Up to 15 bar pressure</li></ul></div><div class="sku-side"><div class="price">₹2,900 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="HTP Power Sprayer">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>HTP Spray Pump</h4><ul class="chips"><li>30 LPM flow</li><li>2 HP</li><li>4 piston</li></ul></div><div class="sku-side"><div class="price">₹8,000 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="HTP Spray Pump">Get quote</a></div></article><article class="sku"><div class="sku-main"><h4>Stainless Steel Sprayer</h4><ul class="chips"><li>SS 304</li><li>18 L capacity</li><li>Manual operation</li></ul></div><div class="sku-side"><div class="price">₹8,000 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Stainless Steel Sprayer">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="square-pipe" hidden><article class="sku"><div class="sku-main"><h4>PVC Square Pipe, Poultry</h4><ul class="chips"><li>PVC, white</li><li>3 m length</li><li>2.5 kg/cm² rating</li></ul></div><div class="sku-side"><div class="price">₹140 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="PVC Square Pipe, Poultry">Get quote</a></div></article></div><div class="panel" role="tabpanel" data-cat="rubber-mats" hidden><article class="sku"><div class="sku-main"><h4>Rubber Mat for Poultry Cages</h4><ul class="chips"><li>3 × 1 ft</li><li>Rubber</li><li>Load up to 50 kg</li></ul></div><div class="sku-side"><div class="price">₹85 / piece<small>MOQ: On request</small></div><a class="btn btn-primary btn-sm" href="#contact" data-product="Rubber Mat for Poultry Cages">Get quote</a></div></article></div>
+    <p class="fine">Prices exclude GST and freight. MOQ = minimum order quantity.</p>
+  </div>
+</section>
+
+<section id="gallery">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Gallery</span>
@@ -409,7 +462,7 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
   </div>
 </section>
 
-<section id="why">
+<section id="why" class="alt">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Why Parkash</span>
@@ -446,7 +499,7 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
     <div class="inner">
       <span class="eyebrow">Export</span>
       <h2>Supplying buyers beyond India</h2>
-      <p>We welcome enquiries from distributors, farms and project buyers worldwide. Share your destination country and quantity, and we will respond with a quote.</p>
+      <p>Parkash equipment has already reached buyers in Saudi Arabia. We welcome enquiries from distributors, farms and project buyers worldwide. Share your destination country and quantity, and we will respond with a quote.</p>
       <ul class="checks">
         <li><i><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></i><div><b>Export enquiries welcome</b><span>Distributors, integrators and farm projects.</span></div></li>
         <li><i><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></i><div><b>Bulk and repeat orders</b><span>Clear pricing for container and project quantities.</span></div></li>
@@ -462,7 +515,7 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
     <div>
       <span class="eyebrow">The company</span>
       <h2>Parkash Industries is a brand of ASN Poultech Private Limited</h2>
-      <p class="lead">ASN Poultech is a poultry equipment and farming company registered in Haryana. Parkash Industries is its manufacturing brand for poultry housing and farm equipment.</p>
+      <p class="lead">Parkash Industries has made poultry cages and farm equipment in Safidon since 2018, built on the experience of the Kharb family. Today the brand is run by ASN Poultech Private Limited, a poultry equipment and farming company registered in Haryana.</p>
       <div class="team">
         <span>Surender Kharb <small>DIRECTOR</small></span>
         <span>Narinder Kharb <small>DIRECTOR</small></span>
@@ -476,6 +529,48 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
       <div><dt>GSTIN</dt><dd>06ABGCA9618L1Z9</dd></div>
       <div><dt>Registered office</dt><dd>Plot No. 55, Tito Kheri Road, Village Tito Kheri, Safidon, Distt. Jind, Haryana 126112</dd></div>
     </dl>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Trusted by farm buyers</span>
+      <h2>What our buyers say</h2>
+    </div>
+    <div class="ratings">
+      <a class="rating" href="https://www.google.com/maps/place/?q=place_id:ChIJ77-cZgblDTkReO3T_u5qnZI" target="_blank" rel="noopener"><b>4.4<span>&#9733;</span></b><div><strong>Google</strong><small>16 reviews</small></div></a>
+      <a class="rating" href="https://www.parkashindustry.com/profile.html" target="_blank" rel="noopener"><b>4.0<span>&#9733;</span></b><div><strong>IndiaMART</strong><small>13 buyer ratings &middot; 100% on delivery</small></div></a>
+      <div class="rating"><b>SA</b><div><strong>Exported</strong><small>Buyers in Saudi Arabia</small></div></div>
+    </div>
+    <div class="buyers">
+      <div><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>Poultry cage order</p><small>Bablu K. &middot; Orai, Uttar Pradesh</small></div>
+      <div><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>Chain link fencing order</p><small>Arun M. &middot; Panipat, Haryana</small></div>
+      <div><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>Rated for response, quality and delivery</p><small>Jyoti Ranjan B. &middot; Cuttack, Odisha</small></div>
+    </div>
+    <ul class="promise">
+      <li>Quality checks on every batch</li><li>Prompt, timely delivery</li><li>Cost-effective factory pricing</li><li>Ethical, transparent dealing</li>
+    </ul>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap visit">
+    <div>
+      <span class="eyebrow">Visit the factory</span>
+      <h2>Find us in Tito Kheri, Safidon</h2>
+      <p class="lead">Buyers are welcome to visit the unit and see cages being made before ordering.</p>
+      <dl class="hours">
+        <div><dt>Open</dt><dd>Monday to Sunday</dd></div>
+        <div><dt>Timings</dt><dd>8:00 AM &ndash; 5:00 PM</dd></div>
+        <div><dt>Address</dt><dd>Plot No. 55, Tito Kheri Road, near Govt. Primary School, Village Tito Kheri, Safidon, Distt. Jind, Haryana 126112</dd></div>
+      </dl>
+      <div class="actions-row">
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=29.3936889,76.716061" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-dark" href="https://www.google.com/maps/place/?q=place_id:ChIJ77-cZgblDTkReO3T_u5qnZI" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="map"><iframe title="Parkash Industries on Google Maps" src="https://maps.google.com/maps?q=29.3936889,76.716061&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
   </div>
 </section>
 
@@ -494,9 +589,9 @@ footer{background:var(--charcoal);color:#C9CDD3;font-size:14px}
           <span class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
           <span><b>Email</b><span>admin.advaman@gmail.com</span></span>
         </a>
-        <a href="https://maps.google.com/?q=29.393689,76.716061" target="_blank" rel="noopener">
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJ77-cZgblDTkReO3T_u5qnZI" target="_blank" rel="noopener">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-          <span><b>Factory address</b><span>Plot No. 55, Tito Kheri Road, Village Tito Kheri, Safidon, Distt. Jind, Haryana 126112, India</span></span>
+          <span><b>Factory &middot; open daily 8 AM &ndash; 5 PM</b><span>Plot No. 55, Tito Kheri Road, Village Tito Kheri, Safidon, Distt. Jind, Haryana 126112, India</span></span>
         </a>
       </div>
     </div>
@@ -580,6 +675,19 @@ function sendQuote(e,via){
   }
   return false;
 }
+
+(function(){
+  var tabs=document.querySelectorAll('.tabs button'),panels=document.querySelectorAll('.panel');
+  function show(cat){tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.cat===cat)});panels.forEach(function(p){p.hidden=p.dataset.cat!==cat});}
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.cat)})});
+  document.querySelectorAll('.card[data-cat]').forEach(function(c){c.addEventListener('click',function(){show(c.dataset.cat)})});
+  var map={'chicken-cage':'Chicken cages','poultry-cage':'Poultry cages','chain-link-fencing':'Chain link fencing','cooling-pad':'Cooling pads','poultry-exhaust-fan':'Exhaust fans','poultry-feeder':'Poultry feeders','power-sprayer':'Power sprayers','square-pipe':'Square pipe','rubber-mats':'Rubber mats'};
+  document.querySelectorAll('[data-product]').forEach(function(a){a.addEventListener('click',function(){
+    var f=document.getElementById('quote'),panel=a.closest('.panel');
+    if(panel&&map[panel.dataset.cat])f.product.value=map[panel.dataset.cat];
+    var d=f.details; if(!d.value)d.value='Product: '+a.dataset.product+'\n';
+  })});
+})();
 </script>
 </body>
 </html>
