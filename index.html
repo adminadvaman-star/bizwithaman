@@ -7,149 +7,177 @@
 <meta name="description" content="Biz With Aman helps founders and small businesses build a clear plan, a steady pipeline and a brand people trust.">
 <meta property="og:title" content="Biz With Aman">
 <meta property="og:description" content="Business. Growth. Success.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bizwithaman.com/">
 <meta property="og:image" content="https://bizwithaman.com/logo.png">
-<link rel="icon" href="aman.jpg">
-<link rel="canonical" href="https://bizwithaman.com/">
-<meta name="theme-color" content="#14295f">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d1c45">
+<link rel="canonical" href="https://bizwithaman.com/">
+<link rel="icon" href="aman.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Biz With Aman","url":"https://bizwithaman.com/","logo":"https://bizwithaman.com/logo.png","image":"https://bizwithaman.com/aman.jpg","slogan":"Business, Growth, Success","description":"Business strategy, growth consulting and personal brand building for founders and small businesses.","areaServed":"IN","email":"admin.advaman@gmail.com","telephone":"+919817475759"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#14295f; --navy-deep:#0d1c45; --gold:#d9a93f; --gold-light:#e6bd5c; --gold-dark:#b8861b;
-  --cream:#fbf6ea; --ink:#14295f; --muted:#52608a; --line:#e6dfcb; --white:#fff;
-  --gold-grad:linear-gradient(90deg,#e2b24a,#b8861b);
+  --navy:#14295f; --deep:#0b1738; --night:#08112b; --gold:#d9a93f; --gold-l:#ecc668; --gold-d:#b8861b;
+  --cream:#fbf6ea; --paper:#fffdf8; --ink:#14295f; --muted:#56638a; --line:#e7dfca; --soft:#aebbe0;
+  --grad:linear-gradient(100deg,#f0cd74 0%,#d9a93f 45%,#b8861b 100%);
   --font:'Poppins',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--font);color:var(--ink);background:var(--white);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.gtext{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* Header: the logo is the brand anchor */
-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
-.nav img{height:54px;width:auto;display:block}
-.nav ul{display:flex;gap:28px;list-style:none;padding:0;align-items:center}
-.nav ul a{text-decoration:none;font-weight:500;font-size:.95rem}
-.nav ul a:hover{color:var(--gold-dark)}
-.cta{background:var(--navy);color:#fff!important;padding:10px 22px;border-radius:999px}
-.cta:hover{background:var(--gold-dark)}
+/* Header */
+header{background:rgba(255,253,248,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0}
+.nav img{height:56px;width:auto;display:block}
+.nav ul{display:flex;gap:30px;list-style:none;padding:0;align-items:center}
+.nav ul a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative}
+.nav ul a:not(.cta):hover{color:var(--gold-d)}
+.cta{background:var(--navy);color:#fff!important;padding:11px 24px;border-radius:999px;font-weight:600!important;transition:background .2s}
+.cta:hover{background:var(--gold-d)}
+.menu-btn{display:none;background:none;border:2px solid var(--navy);border-radius:10px;padding:8px 14px;font:600 .9rem var(--font);color:var(--navy);cursor:pointer}
+
+/* Buttons */
+.btn{display:inline-block;padding:16px 32px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:var(--font);font-size:1rem}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--grad);color:var(--night);box-shadow:0 10px 30px #d9a93f40}
+.btn.line{border-color:#ffffff55;color:#fff}
+.btn.line:hover{border-color:var(--gold-l)}
+.btn.navy{background:var(--navy);color:#fff}
 
 /* Hero */
-.hero{background:var(--cream);padding:80px 0 90px}
-.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
-.tagline{font-weight:600;color:var(--gold-dark);letter-spacing:.14em;font-size:.9rem;margin-bottom:18px}
-h1{font-size:clamp(2.4rem,5.6vw,4.2rem);line-height:1.08;font-weight:800;letter-spacing:-.025em;margin-bottom:22px}
-.gold{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{font-size:1.15rem;color:var(--muted);max-width:46ch;margin-bottom:34px}
+.hero{background:radial-gradient(1000px 600px at 82% 40%,#1e3a82 0%,transparent 60%),linear-gradient(160deg,var(--deep),var(--night));color:#fff;padding:96px 0 110px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:560px;height:560px;border-radius:50%;border:2px solid #d9a93f33}
+.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:400px;height:400px;border-radius:50%;border:2px solid #d9a93f22}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+.tag{display:inline-flex;align-items:center;gap:12px;font-weight:600;color:var(--gold-l);font-size:.95rem;margin-bottom:26px}
+.tag::before{content:"";width:44px;height:2px;background:var(--grad)}
+h1{font-size:clamp(2.5rem,5.8vw,4.6rem);line-height:1.05;font-weight:800;letter-spacing:-.03em;margin-bottom:26px}
+h1 .gtext{display:block}
+.hero p.sub{font-size:1.2rem;color:var(--soft);max-width:46ch;margin-bottom:38px}
 .btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn.primary{background:var(--navy);color:#fff}
-.btn.gold{background:var(--gold-grad);color:var(--navy-deep)}
-.btn.ghost{border:2px solid var(--navy)}
-/* One memorable element: the portrait in the logo's navy and gold ring */
-.ring{position:relative;width:min(100%,400px);aspect-ratio:1;margin:0 auto}
-.ring::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:14px solid var(--navy);border-right-color:transparent;border-top-color:transparent;transform:rotate(-8deg)}
-.ring::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:14px solid var(--gold);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-8deg)}
-.ring img{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;object-fit:cover;border:8px solid #fff;display:block}
+.hero-meta{display:flex;gap:34px;flex-wrap:wrap;margin-top:48px;padding-top:26px;border-top:1px solid #ffffff22}
+.hero-meta div{font-size:.9rem;color:var(--soft)}
+.hero-meta b{display:block;color:#fff;font-size:1.05rem;font-weight:600}
+
+/* Portrait: the one memorable element */
+.portrait{position:relative;width:min(100%,430px);aspect-ratio:1;margin:0 auto}
+.portrait .crescent{position:absolute;inset:-22px;border-radius:50%;border:18px solid var(--gold);border-top-color:transparent;border-left-color:transparent;transform:rotate(-12deg)}
+.portrait .crescent.b{inset:-40px;border:12px solid #fff;border-bottom-color:transparent;border-right-color:transparent;opacity:.16;transform:rotate(-20deg)}
+.portrait img{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;object-fit:cover;border:10px solid var(--paper);display:block;box-shadow:0 30px 80px #00000066}
+.portrait .spark{position:absolute;z-index:2;right:-6px;top:6px;width:64px;height:64px;color:var(--gold-l)}
+.badge{position:absolute;z-index:3;left:-14px;bottom:34px;background:#fff;color:var(--navy);padding:14px 20px;border-radius:16px;box-shadow:0 16px 40px #00000040;font-weight:700;line-height:1.25;font-size:.95rem}
+.badge small{display:block;font-weight:500;color:var(--muted);font-size:.8rem}
 
 /* Sections */
-section{padding:92px 0}
-h2{font-size:clamp(1.8rem,3.8vw,2.6rem);line-height:1.15;font-weight:700;letter-spacing:-.02em;margin-bottom:26px;max-width:22ch}
-.lead{color:var(--muted);max-width:62ch;margin-bottom:16px}
-.lead:first-of-type{color:var(--ink);font-size:1.18rem;font-weight:500}
-.facts{display:flex;gap:40px;flex-wrap:wrap;margin-top:30px;padding-top:26px;border-top:2px solid var(--gold)}
+section{padding:104px 0}
+h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.12;font-weight:700;letter-spacing:-.025em;margin-bottom:28px;max-width:20ch}
+.kicker{font-weight:600;color:var(--gold-d);margin-bottom:12px;font-size:.98rem}
+.about .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
+.quote{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;font-weight:600;letter-spacing:-.02em;border-left:5px solid var(--gold);padding-left:26px}
+.lead{color:var(--muted);max-width:60ch;margin-bottom:18px}
+.lead:first-of-type{color:var(--ink);font-size:1.2rem;font-weight:500}
+.facts{display:flex;gap:40px;flex-wrap:wrap;margin-top:32px;padding-top:26px;border-top:2px solid var(--gold)}
 .facts div{font-size:.92rem;color:var(--muted)}
-.facts b{display:block;color:var(--navy);font-size:1.1rem}
+.facts b{display:block;color:var(--navy);font-size:1.08rem}
 
-.services{background:var(--navy);color:#fff}
-.services h2{color:#fff}
-.svc{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;padding:30px 0;border-top:1px solid #ffffff2b}
-.svc:last-child{border-bottom:1px solid #ffffff2b}
-.svc h3{font-size:1.45rem;font-weight:700}
-.svc p{color:#c7d1ee;max-width:56ch}
-.svc small{display:block;margin-top:10px;color:var(--gold-light);font-weight:600;font-size:.9rem}
+.services{background:var(--cream)}
+.svc{display:grid;grid-template-columns:.9fr 1.3fr auto;gap:44px;align-items:center;padding:36px 0;border-top:1px solid #d8cfb5;transition:padding .25s}
+.svc:last-child{border-bottom:1px solid #d8cfb5}
+.svc:hover{padding-left:14px}
+.svc h3{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:700;letter-spacing:-.015em;line-height:1.2}
+.svc p{color:var(--muted);max-width:52ch}
+.svc small{display:inline-block;margin-top:10px;color:var(--gold-d);font-weight:600;font-size:.9rem}
+.svc a{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:2px solid var(--gold);padding-bottom:2px;white-space:nowrap}
 
-.steps{list-style:none;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.steps li{counter-increment:s;border-top:4px solid var(--gold);padding-top:18px}
-.steps li::before{content:"Step " counter(s);display:block;color:var(--gold-dark);font-weight:600;font-size:.9rem;margin-bottom:4px}
-.steps h3{font-size:1.25rem;margin-bottom:6px}
-.steps p{color:var(--muted);font-size:.98rem}
+.featured{background:linear-gradient(160deg,var(--deep),var(--night));color:#fff}
+.featured h2{color:#fff}
+.fb-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-end;margin-bottom:12px}
+.fb-top h3{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.where{color:var(--gold-l);font-weight:600;margin:8px 0 14px}
+.fb-top p{color:var(--soft);max-width:54ch}
+.prods{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:#ffffff1f;border:1px solid #ffffff1f;border-radius:18px;overflow:hidden;margin-top:40px}
+.prod{display:block;background:var(--deep);padding:26px;text-decoration:none;transition:background .2s}
+.prod:hover{background:#13245a}
+.prod b{display:block;font-size:1.1rem;margin-bottom:4px}
+.prod small{color:var(--soft);font-size:.9rem}
+.prod:hover b{color:var(--gold-l)}
 
+.steps{list-style:none;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--navy)}
+.steps li{counter-increment:s;padding:34px 34px 10px 0;margin-right:34px;border-right:1px solid var(--line)}
+.steps li:last-child{border-right:0;margin-right:0}
+.steps li::before{content:counter(s);display:block;font-weight:800;font-size:3.6rem;line-height:1;margin-bottom:12px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.steps h3{font-size:1.35rem;margin-bottom:8px}
+.steps p{color:var(--muted)}
 
-.feature{background:var(--white)}
-.biz{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start;border:2px solid var(--gold);border-radius:20px;padding:40px;background:var(--cream)}
-.biz h3{font-size:1.7rem;font-weight:700;margin-bottom:4px}
-.biz .where{color:var(--gold-dark);font-weight:600;font-size:.95rem;margin-bottom:16px}
-.biz p{color:var(--muted);margin-bottom:22px;max-width:50ch}
-.tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
-.tags li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.92rem;font-weight:500}
-.contact{background:var(--cream)}
-.contact p{color:var(--muted);max-width:50ch;margin-bottom:26px}
-.mail{display:inline-block;font-weight:700;font-size:clamp(1.3rem,3.6vw,2.4rem);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:8px;text-decoration-thickness:3px;word-break:break-all}
-.social{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;list-style:none;padding:0}
-.social a{font-weight:600;text-decoration:none;color:var(--navy)}
-.social a:hover{color:var(--gold-dark);text-decoration:underline}
-footer{background:var(--navy-deep);color:#9fb0d6;padding:26px 0 34px;font-size:.9rem}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-
-
-/* v2 additions */
-.menu-btn{display:none;background:none;border:2px solid var(--navy);border-radius:10px;padding:8px 12px;font:600 .9rem var(--font);color:var(--navy);cursor:pointer}
-.strip{background:var(--navy);color:#fff;padding:18px 0}
-.strip .wrap{display:flex;justify-content:space-between;gap:12px 36px;flex-wrap:wrap;font-weight:600;font-size:.98rem}
-.strip span{color:var(--gold-light)}
-.prods{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:34px}
-.prod{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;transition:border-color .15s,transform .15s}
-.prod:hover{border-color:var(--gold);transform:translateY(-2px)}
-.prod b{display:block;font-size:1.05rem;color:var(--navy);margin-bottom:4px}
-.prod small{color:var(--muted);font-size:.9rem}
-.biz-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
-.facts2{display:flex;gap:28px;flex-wrap:wrap;margin:18px 0 22px;font-size:.92rem;color:var(--muted)}
-.facts2 b{display:block;color:var(--navy);font-size:1rem}
 .faq{background:var(--cream)}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 22px;margin-bottom:12px;max-width:820px}
-.faq summary{cursor:pointer;padding:18px 0;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq details{border-top:1px solid #d8cfb5;max-width:860px}
+.faq details:last-of-type{border-bottom:1px solid #d8cfb5}
+.faq summary{cursor:pointer;padding:22px 0;font-weight:600;font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:18px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--gold-dark);font-size:1.4rem;line-height:1}
-.faq details[open] summary::after{content:"\2212"}
-.faq details p{color:var(--muted);padding-bottom:18px;max-width:64ch}
-.form{display:grid;gap:14px;max-width:560px;margin:8px 0 34px}
-.form label{font-weight:600;font-size:.92rem;color:var(--navy);display:grid;gap:6px}
-.form input,.form textarea{font:inherit;padding:13px 16px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+.faq summary::after{content:"+";color:var(--gold-d);font-size:1.6rem;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);padding:0 0 22px;max-width:64ch}
+
+.contact{background:radial-gradient(900px 500px at 15% 0%,#1e3a82 0%,transparent 60%),var(--night);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:start}
+.contact h2{color:#fff;max-width:14ch}
+.contact .intro{color:var(--soft);max-width:44ch;margin-bottom:30px}
+.mail{display:block;font-weight:700;font-size:clamp(1.15rem,2.6vw,1.7rem);text-decoration:none;color:#fff;border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:4px;word-break:break-all}
+.phone{margin-top:20px;font-weight:600;color:var(--soft)}
+.phone a{color:#fff;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}
+.social{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;list-style:none;padding:0}
+.social a{font-weight:600;text-decoration:none;color:var(--soft)}
+.social a:hover{color:var(--gold-l)}
+.form{display:grid;gap:16px;background:#ffffff0d;border:1px solid #ffffff22;border-radius:22px;padding:34px}
+.form label{font-weight:600;font-size:.92rem;display:grid;gap:7px;color:#e6ecff}
+.form input,.form textarea{font:inherit;padding:14px 16px;border:1.5px solid #ffffff2e;border-radius:12px;background:#ffffff12;color:#fff}
 .form textarea{min-height:120px;resize:vertical}
-.form input:focus,.form textarea:focus{border-color:var(--gold-dark);outline:none;box-shadow:0 0 0 3px #d9a93f40}
-.form button{cursor:pointer;border:0;font:inherit;font-weight:600}
-.form .note{font-size:.88rem;color:var(--muted);margin:0}
-.phone{margin:22px 0 0!important;font-weight:600}.phone a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}.wa{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--gold-grad);color:var(--navy-deep);padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px #14295f40;font-size:.95rem}
-@media (max-width:820px){
-  .menu-btn{display:block}
-  .nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 24px 18px}
-  .nav ul.open{display:flex}
-  .nav ul li:not(:last-child){display:block}
-  .nav ul a{display:block;padding:12px 0}
-  .nav ul .cta{text-align:center;margin-top:8px}
-  .strip .wrap{justify-content:flex-start}
+.form input:focus,.form textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px #d9a93f40}
+.form .note{font-size:.86rem;color:var(--soft)}
+
+footer{background:#050b1c;color:#8d9cc4;padding:30px 0 40px;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.wa{position:fixed;right:18px;bottom:18px;z-index:40;background:var(--grad);color:var(--night);padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 10px 30px #0000005a;font-size:.95rem}
+
+/* One orchestrated load moment in the hero */
+@media (prefers-reduced-motion:no-preference){
+  .hero .wrap>div:first-child>*{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+  .hero .wrap>div:first-child>*:nth-child(2){animation-delay:.08s}
+  .hero .wrap>div:first-child>*:nth-child(3){animation-delay:.16s}
+  .hero .wrap>div:first-child>*:nth-child(4){animation-delay:.24s}
+  .hero .wrap>div:first-child>*:nth-child(5){animation-delay:.32s}
+  .portrait{animation:pop 1s .15s cubic-bezier(.2,.7,.2,1) both}
+  .portrait .crescent{animation:spin 1.4s .2s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes up{from{transform:translateY(28px);opacity:0}to{transform:none;opacity:1}}
+  @keyframes pop{from{transform:scale(.92);opacity:0}to{transform:none;opacity:1}}
+  @keyframes spin{from{transform:rotate(-120deg)}to{transform:rotate(-12deg)}}
 }
 
-@media (prefers-reduced-motion:no-preference){
-  .ring{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
-  @keyframes rise{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
-}
-@media (max-width:820px){
-  .biz{grid-template-columns:1fr;padding:26px}
-  .nav ul li:not(:last-child){display:none}
-  .nav img{height:44px}
-  .hero{padding:48px 0 64px}
-  .hero .wrap,.svc,.steps{grid-template-columns:1fr}
-  .ring{width:min(78%,320px);order:-1}
-  section{padding:64px 0}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 24px 20px}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:13px 0}
+  .nav ul .cta{text-align:center;margin-top:8px}
+  .nav img{height:46px}
+  section{padding:72px 0}
+  .hero{padding:56px 0 76px}
+  .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:48px}
+  .portrait{width:min(78%,340px);order:-1}
+  .badge{left:-6px}
+  .svc{grid-template-columns:1fr;gap:12px;padding:30px 0}
+  .svc:hover{padding-left:0}
+  .steps{grid-template-columns:1fr}
+  .steps li{border-right:0;margin-right:0;padding:28px 0 6px;border-bottom:1px solid var(--line)}
+  .form{padding:24px}
 }
 </style>
 </head>
@@ -175,71 +203,95 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   <div class="hero">
     <div class="wrap">
       <div>
-        <p class="tagline">BUSINESS &bull; GROWTH &bull; SUCCESS</p>
-        <h1>Grow your business with a plan that <span class="gold">actually works</span></h1>
-        <p>I'm Aman. I help founders and small businesses build a clear strategy, a steady pipeline and a brand people trust.</p>
+        <p class="tag">Business, growth, success</p>
+        <h1>Grow your business with a plan <span class="gtext">that actually works.</span></h1>
+        <p class="sub">I'm Aman. I help founders and small businesses build a clear strategy, a steady pipeline and a brand people trust.</p>
         <div class="btns">
           <a class="btn gold" href="#contact">Book a free call</a>
-          <a class="btn ghost" href="#work">See how I help</a>
+          <a class="btn line" href="#work">See how I help</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>Strategy</b>Clear 90-day plans</div>
+          <div><b>Growth</b>Sales and marketing</div>
+          <div><b>Brand</b>Be known for your work</div>
         </div>
       </div>
-      <div class="ring"><img src="aman.jpg" alt="Portrait of Aman"></div>
+      <div class="portrait">
+        <span class="crescent b"></span><span class="crescent"></span>
+        <img src="aman.jpg" alt="Portrait of Aman">
+        <svg class="spark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M50 0C54 30 70 46 100 50 70 54 54 70 50 100 46 70 30 54 0 50 30 46 46 30 50 0Z"/></svg>
+        <div class="badge">Aman<small>Business and growth consultant</small></div>
+      </div>
     </div>
   </div>
 
-  <div class="strip"><div class="wrap"><span>Strategy</span><span>Growth</span><span>Personal brand</span><span>Business, growth, success</span></div></div>
-
-  <section id="about">
+  <section id="about" class="about">
     <div class="wrap">
-      <h2>Practical advice from someone who has done the work</h2>
-      <p class="lead">I work with owners who are busy running the business and don't have time to work out why growth has stalled.</p>
-      <p class="lead">My approach is simple: find the one or two things holding you back, fix those first, then build a routine that keeps results coming. No jargon, no 80-page decks.</p>
-      <div class="facts">
-        <div><b>Add your experience</b>Years in business</div>
-        <div><b>Add your number</b>Businesses helped</div>
-        <div><b>Your city, India</b>Based in</div>
+      <p class="quote">Growth is not about doing more. It is about doing the right few things, every week.</p>
+      <div>
+        <p class="kicker">About me</p>
+        <h2>Practical advice from someone who has done the work</h2>
+        <p class="lead">I work with owners who are busy running the business and don't have time to work out why growth has stalled.</p>
+        <p class="lead">My approach is simple: find the one or two things holding you back, fix those first, then build a routine that keeps results coming. No jargon, no 80-page decks.</p>
+        <div class="facts">
+          <div><b>Add your experience</b>Years in business</div>
+          <div><b>Add your number</b>Businesses helped</div>
+          <div><b>Your city, India</b>Based in</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="work" class="services">
     <div class="wrap">
+      <p class="kicker">Services</p>
       <h2>Three ways to work together</h2>
-      <div class="svc"><h3>Strategy sessions</h3><div><p>One focused session to review your business, set priorities for the next 90 days and leave with a written plan you can start on the same day.</p><small>Best for owners who feel stuck</small></div></div>
-      <div class="svc"><h3>Growth consulting</h3><div><p>Ongoing monthly work on sales, marketing and operations. We set targets, track the numbers and adjust every week.</p><small>Best for businesses ready to scale</small></div></div>
-      <div class="svc"><h3>Personal brand building</h3><div><p>Positioning, profile makeover and a simple content routine so the right clients find you and trust you before the first call.</p><small>Best for founders, freelancers and professionals</small></div></div>
+      <div class="svc">
+        <h3>Strategy sessions</h3>
+        <div><p>One focused session to review your business, set priorities for the next 90 days and leave with a written plan you can start on the same day.</p><small>Best for owners who feel stuck</small></div>
+        <a href="#contact">Book a session</a>
+      </div>
+      <div class="svc">
+        <h3>Growth consulting</h3>
+        <div><p>Ongoing monthly work on sales, marketing and operations. We set targets, track the numbers and adjust every week.</p><small>Best for businesses ready to scale</small></div>
+        <a href="#contact">Start growing</a>
+      </div>
+      <div class="svc">
+        <h3>Personal brand building</h3>
+        <div><p>Positioning, profile makeover and a simple content routine so the right clients find you and trust you before the first call.</p><small>Best for founders, freelancers and professionals</small></div>
+        <a href="#contact">Build my brand</a>
+      </div>
     </div>
   </section>
 
-  <section id="featured" class="feature">
+  <section id="featured" class="featured">
     <div class="wrap">
-      <h2>Featured business</h2>
-      <div class="biz" style="display:block">
-        <div class="biz-top">
-          <div>
-            <h3>Parkash Industries</h3>
-            <div class="where">Manufacturer and exporter, Jind, Haryana</div>
-            <p>A poultry equipment manufacturer supplying cages, fencing, cooling and feeding systems to poultry farms across India.</p>
-          </div>
-          <a class="btn primary" href="https://www.parkashindustry.com/" target="_blank" rel="noopener">Visit parkashindustry.com</a>
+      <p class="kicker" style="color:var(--gold-l)">Featured business</p>
+      <div class="fb-top">
+        <div>
+          <h3>Parkash Industries</h3>
+          <div class="where">Manufacturer and exporter, Jind, Haryana</div>
+          <p>A poultry equipment manufacturer supplying cages, fencing, cooling and feeding systems to poultry farms across India.</p>
         </div>
-        <div class="prods">
-          <a class="prod" href="https://www.parkashindustry.com/chicken-cage.html" target="_blank" rel="noopener"><b>Chicken cages</b><small>Poultry, brooder and GI cages</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/poultry-cage.html" target="_blank" rel="noopener"><b>Poultry cages</b><small>Layer, chick and grower cages</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/chain-link-fencing.html" target="_blank" rel="noopener"><b>Chain link fencing</b><small>Fencing and wire mesh</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/cooling-pad.html" target="_blank" rel="noopener"><b>Cooling pads</b><small>Evaporative cooling for sheds</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/poultry-feeder.html" target="_blank" rel="noopener"><b>Poultry feeders</b><small>Chicken feeders</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/poultry-exhaust-fan.html" target="_blank" rel="noopener"><b>Exhaust fans</b><small>Ventilation for poultry houses</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/power-sprayer.html" target="_blank" rel="noopener"><b>Power sprayers</b><small>HTP and stainless steel</small></a>
-          <a class="prod" href="https://www.parkashindustry.com/rubber-mats.html" target="_blank" rel="noopener"><b>Rubber mats</b><small>Mats for poultry cages</small></a>
-        </div>
+        <a class="btn gold" href="https://www.parkashindustry.com/" target="_blank" rel="noopener">Visit parkashindustry.com</a>
+      </div>
+      <div class="prods">
+        <a class="prod" href="https://www.parkashindustry.com/chicken-cage.html" target="_blank" rel="noopener"><b>Chicken cages</b><small>Poultry, brooder and GI cages</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/poultry-cage.html" target="_blank" rel="noopener"><b>Poultry cages</b><small>Layer, chick and grower cages</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/chain-link-fencing.html" target="_blank" rel="noopener"><b>Chain link fencing</b><small>Fencing and wire mesh</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/cooling-pad.html" target="_blank" rel="noopener"><b>Cooling pads</b><small>Evaporative cooling for sheds</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/poultry-feeder.html" target="_blank" rel="noopener"><b>Poultry feeders</b><small>Chicken feeders</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/poultry-exhaust-fan.html" target="_blank" rel="noopener"><b>Exhaust fans</b><small>Ventilation for poultry houses</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/power-sprayer.html" target="_blank" rel="noopener"><b>Power sprayers</b><small>HTP and stainless steel</small></a>
+        <a class="prod" href="https://www.parkashindustry.com/rubber-mats.html" target="_blank" rel="noopener"><b>Rubber mats</b><small>Mats for poultry cages</small></a>
       </div>
     </div>
   </section>
 
   <section id="process">
     <div class="wrap">
-      <h2>How it works</h2>
+      <p class="kicker">How it works</p>
+      <h2>From first call to real results</h2>
       <ol class="steps">
         <li><h3>Talk</h3><p>A free 30-minute call to understand your goals and where you are today.</p></li>
         <li><h3>Plan</h3><p>I send a clear proposal with what we'll do, how long it takes and what it costs.</p></li>
@@ -250,6 +302,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
   <section id="faq" class="faq">
     <div class="wrap">
+      <p class="kicker">FAQ</p>
       <h2>Common questions</h2>
       <details><summary>Who do you work with?</summary><p>Founders, small business owners, freelancers and professionals who want clear priorities and steady growth without a large consulting budget.</p></details>
       <details><summary>How long does it take to see results?</summary><p>You leave the first strategy session with a written 90-day plan. Most clients see their first changes in sales or enquiries within the first one to two months, depending on the business.</p></details>
@@ -260,8 +313,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>Let's talk about your business</h2>
-      <p>Tell me what you're working on and where you want to be in a year. I reply within one working day.</p>
+      <div>
+        <p class="kicker" style="color:var(--gold-l)">Contact</p>
+        <h2>Let's talk about your business</h2>
+        <p class="intro">Tell me what you're working on and where you want to be in a year. I reply within one working day.</p>
+        <a class="mail" href="mailto:admin.advaman@gmail.com">admin.advaman@gmail.com</a>
+        <p class="phone"><a href="tel:+919817475759">Call +91 98174 75759</a> &nbsp;or&nbsp; <a href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener">message on WhatsApp</a></p>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          <li><a href="https://x.com/" rel="noopener">X</a></li>
+        </ul>
+      </div>
       <form class="form" id="cf">
         <label>Your name<input name="n" required autocomplete="name"></label>
         <label>Phone or email<input name="c" required autocomplete="email"></label>
@@ -269,20 +332,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
         <button class="btn gold" type="submit">Send message</button>
         <p class="note">This opens your email app with your message ready to send.</p>
       </form>
-      <a class="mail" href="mailto:admin.advaman@gmail.com">admin.advaman@gmail.com</a>
-      <p class="phone"><a href="tel:+919817475759">Call +91 98174 75759</a> &nbsp;or&nbsp; <a href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener">message on WhatsApp</a></p>
-      <ul class="social">
-        <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
-        <li><a href="https://x.com/" rel="noopener">X</a></li>
-        <li><a href="https://github.com/adminadvaman-star" rel="noopener">GitHub</a></li>
-      </ul>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap"><span>&copy; <span id="yr">2026</span> Biz With Aman. All rights reserved.</span><span>Business &bull; Growth &bull; Success</span></div>
+  <div class="wrap"><span>&copy; <span id="yr">2026</span> Biz With Aman. All rights reserved.</span><span>Business, growth, success</span></div>
 </footer>
 <a class="wa" href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener">WhatsApp</a>
 <script>
