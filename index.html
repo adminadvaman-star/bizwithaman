@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biz With Aman | Business, Growth, Success</title>
+<meta name="description" content="Biz With Aman helps founders and small businesses build a clear plan, a steady pipeline and a brand people trust.">
+<meta property="og:title" content="Biz With Aman">
+<meta property="og:description" content="Business. Growth. Success.">
+<meta property="og:image" content="https://bizwithaman.com/logo.png">
+<link rel="icon" href="aman.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14295f; --navy-deep:#0d1c45; --gold:#d9a93f; --gold-light:#e6bd5c; --gold-dark:#b8861b;
+  --cream:#fbf6ea; --ink:#14295f; --muted:#52608a; --line:#e6dfcb; --white:#fff;
+  --gold-grad:linear-gradient(90deg,#e2b24a,#b8861b);
+  --font:'Poppins',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:var(--white);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* Header: the logo is the brand anchor */
+header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.nav img{height:54px;width:auto;display:block}
+.nav ul{display:flex;gap:28px;list-style:none;padding:0;align-items:center}
+.nav ul a{text-decoration:none;font-weight:500;font-size:.95rem}
+.nav ul a:hover{color:var(--gold-dark)}
+.cta{background:var(--navy);color:#fff!important;padding:10px 22px;border-radius:999px}
+.cta:hover{background:var(--gold-dark)}
+
+/* Hero */
+.hero{background:var(--cream);padding:80px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.tagline{font-weight:600;color:var(--gold-dark);letter-spacing:.14em;font-size:.9rem;margin-bottom:18px}
+h1{font-size:clamp(2.4rem,5.6vw,4.2rem);line-height:1.08;font-weight:800;letter-spacing:-.025em;margin-bottom:22px}
+.gold{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:46ch;margin-bottom:34px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.gold{background:var(--gold-grad);color:var(--navy-deep)}
+.btn.ghost{border:2px solid var(--navy)}
+/* One memorable element: the portrait in the logo's navy and gold ring */
+.ring{position:relative;width:min(100%,400px);aspect-ratio:1;margin:0 auto}
+.ring::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:14px solid var(--navy);border-right-color:transparent;border-top-color:transparent;transform:rotate(-8deg)}
+.ring::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:14px solid var(--gold);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-8deg)}
+.ring img{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;object-fit:cover;border:8px solid #fff;display:block}
+
+/* Sections */
+section{padding:92px 0}
+h2{font-size:clamp(1.8rem,3.8vw,2.6rem);line-height:1.15;font-weight:700;letter-spacing:-.02em;margin-bottom:26px;max-width:22ch}
+.lead{color:var(--muted);max-width:62ch;margin-bottom:16px}
+.lead:first-of-type{color:var(--ink);font-size:1.18rem;font-weight:500}
+.facts{display:flex;gap:40px;flex-wrap:wrap;margin-top:30px;padding-top:26px;border-top:2px solid var(--gold)}
+.facts div{font-size:.92rem;color:var(--muted)}
+.facts b{display:block;color:var(--navy);font-size:1.1rem}
+
+.services{background:var(--navy);color:#fff}
+.services h2{color:#fff}
+.svc{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;padding:30px 0;border-top:1px solid #ffffff2b}
+.svc:last-child{border-bottom:1px solid #ffffff2b}
+.svc h3{font-size:1.45rem;font-weight:700}
+.svc p{color:#c7d1ee;max-width:56ch}
+.svc small{display:block;margin-top:10px;color:var(--gold-light);font-weight:600;font-size:.9rem}
+
+.steps{list-style:none;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.steps li{counter-increment:s;border-top:4px solid var(--gold);padding-top:18px}
+.steps li::before{content:"Step " counter(s);display:block;color:var(--gold-dark);font-weight:600;font-size:.9rem;margin-bottom:4px}
+.steps h3{font-size:1.25rem;margin-bottom:6px}
+.steps p{color:var(--muted);font-size:.98rem}
+
+
+.feature{background:var(--white)}
+.biz{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start;border:2px solid var(--gold);border-radius:20px;padding:40px;background:var(--cream)}
+.biz h3{font-size:1.7rem;font-weight:700;margin-bottom:4px}
+.biz .where{color:var(--gold-dark);font-weight:600;font-size:.95rem;margin-bottom:16px}
+.biz p{color:var(--muted);margin-bottom:22px;max-width:50ch}
+.tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+.tags li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.92rem;font-weight:500}
+.contact{background:var(--cream)}
+.contact p{color:var(--muted);max-width:50ch;margin-bottom:26px}
+.mail{display:inline-block;font-weight:700;font-size:clamp(1.3rem,3.6vw,2.4rem);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:8px;text-decoration-thickness:3px;word-break:break-all}
+.social{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;list-style:none;padding:0}
+.social a{font-weight:600;text-decoration:none;color:var(--navy)}
+.social a:hover{color:var(--gold-dark);text-decoration:underline}
+footer{background:var(--navy-deep);color:#9fb0d6;padding:26px 0 34px;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (prefers-reduced-motion:no-preference){
+  .ring{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+}
+@media (max-width:820px){
+  .biz{grid-template-columns:1fr;padding:26px}
+  .nav ul li:not(:last-child){display:none}
+  .nav img{height:44px}
+  .hero{padding:48px 0 64px}
+  .hero .wrap,.svc,.steps{grid-template-columns:1fr}
+  .ring{width:min(78%,320px);order:-1}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="#top" aria-label="Biz With Aman, home"><img src="logo.png" alt="Biz With Aman logo"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Services</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a class="cta" href="#contact">Book a call</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="tagline">BUSINESS &bull; GROWTH &bull; SUCCESS</p>
+        <h1>Grow your business with a plan that <span class="gold">actually works</span></h1>
+        <p>I'm Aman. I help founders and small businesses build a clear strategy, a steady pipeline and a brand people trust.</p>
+        <div class="btns">
+          <a class="btn gold" href="#contact">Book a free call</a>
+          <a class="btn ghost" href="#work">See how I help</a>
+        </div>
+      </div>
+      <div class="ring"><img src="aman.jpg" alt="Portrait of Aman"></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>Practical advice from someone who has done the work</h2>
+      <p class="lead">I work with owners who are busy running the business and don't have time to work out why growth has stalled.</p>
+      <p class="lead">My approach is simple: find the one or two things holding you back, fix those first, then build a routine that keeps results coming. No jargon, no 80-page decks.</p>
+      <div class="facts">
+        <div><b>Add your experience</b>Years in business</div>
+        <div><b>Add your number</b>Businesses helped</div>
+        <div><b>Your city, India</b>Based in</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="services">
+    <div class="wrap">
+      <h2>Three ways to work together</h2>
+      <div class="svc"><h3>Strategy sessions</h3><div><p>One focused session to review your business, set priorities for the next 90 days and leave with a written plan you can start on the same day.</p><small>Best for owners who feel stuck</small></div></div>
+      <div class="svc"><h3>Growth consulting</h3><div><p>Ongoing monthly work on sales, marketing and operations. We set targets, track the numbers and adjust every week.</p><small>Best for businesses ready to scale</small></div></div>
+      <div class="svc"><h3>Personal brand building</h3><div><p>Positioning, profile makeover and a simple content routine so the right clients find you and trust you before the first call.</p><small>Best for founders, freelancers and professionals</small></div></div>
+    </div>
+  </section>
+
+  <section id="featured" class="feature">
+    <div class="wrap">
+      <h2>Featured business</h2>
+      <div class="biz">
+        <div>
+          <h3>Parkash Industries</h3>
+          <div class="where">Manufacturer and exporter, Jind, Haryana</div>
+          <p>A poultry equipment manufacturer supplying cages, fencing, cooling and feeding systems to poultry farms across India.</p>
+          <a class="btn primary" href="https://www.parkashindustry.com/" target="_blank" rel="noopener">Visit parkashindustry.com</a>
+        </div>
+        <ul class="tags" aria-label="Product range">
+          <li>Chicken cages</li><li>Layer poultry cages</li><li>Chain link fencing</li><li>Cooling pads</li><li>Poultry feeders</li><li>Exhaust fans</li><li>Power sprayers</li><li>Rubber mats</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><h3>Talk</h3><p>A free 30-minute call to understand your goals and where you are today.</p></li>
+        <li><h3>Plan</h3><p>I send a clear proposal with what we'll do, how long it takes and what it costs.</p></li>
+        <li><h3>Deliver</h3><p>We work through the plan together, with regular check-ins and honest progress reports.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's talk about your business</h2>
+      <p>Tell me what you're working on and where you want to be in a year. I reply within one working day.</p>
+      <a class="mail" href="mailto:hello@bizwithaman.com">hello@bizwithaman.com</a>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/" rel="noopener">X</a></li>
+        <li><a href="https://github.com/adminadvaman-star" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>&copy; <span id="yr">2026</span> Biz With Aman. All rights reserved.</span><span>Business &bull; Growth &bull; Success</span></div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
