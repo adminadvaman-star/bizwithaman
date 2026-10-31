@@ -212,6 +212,10 @@ nav .btn:hover{{color:var(--night)}}
 .quote .by{{display:flex;align-items:center;gap:14px;margin-top:28px}}
 .quote .by img{{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}}
 .quote .by small{{display:block;color:var(--soft)}}
+.creds{{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}}
+.creds span{{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px}}
+.creds b{{color:var(--gd);font-weight:700;margin-right:6px}}
+.creds a{{font-weight:600}}
 .beliefs{{list-style:none;display:grid;gap:14px;margin-top:28px}}
 .beliefs li{{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}}
 .beliefs i{{flex:none;width:30px;height:30px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:var(--night)}}
@@ -480,6 +484,7 @@ footer{{background:#050b1f;color:var(--soft);font-size:14.5px}}
       <span class="kick">About me</span>
       <h2>Practical advice from someone who <em>does the work</em></h2>
       <p class="lead">I work with owners who are busy running the business and don&rsquo;t have time to work out why growth has stalled. No jargon, no 80-page decks.</p>
+      <div class="creds"><span><b>Founder</b>Biz With Aman</span><span><b>Director</b>ASN Poultech Pvt. Ltd.</span><span><b>Live client</b><a href="/parkash/">Parkash Industries</a></span></div>
       <ul class="beliefs">
         <li><i>{I["check"]}</i><div><b>Fix the bottleneck first</b><span>Find the one or two things holding you back before adding anything new.</span></div></li>
         <li><i>{I["check"]}</i><div><b>Numbers over opinions</b><span>Weekly targets and a simple scorecard, so you always know what is working.</span></div></li>
