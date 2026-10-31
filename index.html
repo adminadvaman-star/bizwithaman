@@ -1,361 +1,627 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biz With Aman | Business, Growth, Success</title>
-<meta name="description" content="Biz With Aman helps founders and small businesses build a clear plan, a steady pipeline and a brand people trust.">
-<meta property="og:title" content="Biz With Aman">
-<meta property="og:description" content="Business. Growth. Success.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biz With Aman | Business Strategy, Growth &amp; Websites</title>
+<meta name="description" content="Biz With Aman helps founders, manufacturers and small businesses grow with a clear 90-day plan, a steady enquiry pipeline, a website that sells and a brand people trust. Book a free 30-minute call.">
+<link rel="canonical" href="https://bizwithaman.com/">
+<meta name="theme-color" content="#08112b">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Biz With Aman">
+<meta property="og:title" content="Biz With Aman | Business. Growth. Success.">
+<meta property="og:description" content="A clear plan, a steady pipeline and a brand people trust. Book a free 30-minute call.">
 <meta property="og:url" content="https://bizwithaman.com/">
 <meta property="og:image" content="https://bizwithaman.com/logo.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0d1c45">
-<link rel="canonical" href="https://bizwithaman.com/">
-<link rel="icon" href="aman.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Biz With Aman","url":"https://bizwithaman.com/","logo":"https://bizwithaman.com/logo.png","image":"https://bizwithaman.com/aman.jpg","slogan":"Business, Growth, Success","description":"Business strategy, growth consulting and personal brand building for founders and small businesses.","areaServed":"IN","email":"admin.advaman@gmail.com","telephone":"+919817475759"}</script>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Biz With Aman", "url": "https://bizwithaman.com/", "logo": "https://bizwithaman.com/logo.png", "image": "https://bizwithaman.com/aman.jpg", "slogan": "Business, Growth, Success", "telephone": "+91-9817475759", "email": "admin.advaman@gmail.com", "areaServed": "Worldwide", "founder": {"@type": "Person", "name": "Aman"}, "description": "Business strategy, growth consulting, websites and personal brand building for founders and small businesses."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Founders, small business owners, manufacturers, freelancers and professionals who want clear priorities and steady growth without a large consulting budget."}}, {"@type": "Question", "name": "How long does it take to see results?", "acceptedAnswer": {"@type": "Answer", "text": "You leave the first strategy session with a written 90-day plan. Most clients see their first changes in sales or enquiries within the first one to two months, depending on the business."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the service and how much support you need. After the free call I send a clear proposal with the scope, timeline and price before you commit."}}, {"@type": "Question", "name": "Can you build my website too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I design and set up business websites with product catalogues, price calculators and WhatsApp enquiries, along with domain, company email and Google Business Profile. Parkash Industries is a live example."}}, {"@type": "Question", "name": "Do you work with clients outside India?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Sessions run on video call, so location is not a limit."}}]}</script>
+<script>document.documentElement.classList.add('js')</script>
 <style>
 :root{
-  --navy:#14295f; --deep:#0b1738; --night:#08112b; --gold:#d9a93f; --gold-l:#ecc668; --gold-d:#b8861b;
-  --cream:#fbf6ea; --paper:#fffdf8; --ink:#14295f; --muted:#56638a; --line:#e7dfca; --soft:#aebbe0;
+  --navy:#14295f;--deep:#0d1c45;--night:#08112b;--gold:#d9a93f;--gl:#f0cd74;--gd:#b8861b;
+  --cream:#fbf6ea;--paper:#fffdf8;--ink:#14295f;--mut:#56638a;--line:#e9e1cc;--soft:#aebbe0;
   --grad:linear-gradient(100deg,#f0cd74 0%,#d9a93f 45%,#b8861b 100%);
-  --font:'Poppins',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --r:20px;--max:1200px;--ease:cubic-bezier(.2,.7,.2,1);
 }
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{font-family:Poppins,system-ui,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-.gtext{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-
-/* Header */
-header{background:rgba(255,253,248,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0}
-.nav img{height:56px;width:auto;display:block}
-.nav ul{display:flex;gap:30px;list-style:none;padding:0;align-items:center}
-.nav ul a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative}
-.nav ul a:not(.cta):hover{color:var(--gold-d)}
-.cta{background:var(--navy);color:#fff!important;padding:11px 24px;border-radius:999px;font-weight:600!important;transition:background .2s}
-.cta:hover{background:var(--gold-d)}
-.menu-btn{display:none;background:none;border:2px solid var(--navy);border-radius:10px;padding:8px 14px;font:600 .9rem var(--font);color:var(--navy);cursor:pointer}
-
-/* Buttons */
-.btn{display:inline-block;padding:16px 32px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:var(--font);font-size:1rem}
+button{font:inherit;color:inherit}
+svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+svg.fill{fill:currentColor;stroke:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.kick{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:14px;color:var(--gd)}
+.kick::before{content:"";width:30px;height:2px;background:currentColor}
+.dark .kick{color:var(--gl)}
+h1,h2,h3{line-height:1.1;letter-spacing:-.025em}
+h2{font-size:clamp(32px,4.4vw,52px);font-weight:800;margin:14px 0 16px}
+h2 em,h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);font-size:18px;max-width:620px}
+.dark{background:var(--night);color:#fff}
+.dark .lead{color:var(--soft)}
+section{padding:110px 0;position:relative}
+.cream{background:var(--cream)}
+.head{margin-bottom:52px}
+.head.split{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:15.5px;text-decoration:none;padding:15px 28px;border-radius:999px;border:2px solid transparent;cursor:pointer;min-height:50px;white-space:nowrap;transition:transform .25s var(--ease),box-shadow .25s,background .25s,border-color .25s}
 .btn:hover{transform:translateY(-2px)}
-.btn.gold{background:var(--grad);color:var(--night);box-shadow:0 10px 30px #d9a93f40}
-.btn.line{border-color:#ffffff55;color:#fff}
-.btn.line:hover{border-color:var(--gold-l)}
-.btn.navy{background:var(--navy);color:#fff}
+.btn-gold{background:var(--grad);color:var(--night);box-shadow:0 14px 30px -12px rgba(217,169,63,.75)}
+.btn-gold:hover{box-shadow:0 18px 36px -12px rgba(217,169,63,.95)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-line{border-color:rgba(255,255,255,.3);color:#fff}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-out{border-color:var(--line);background:#fff}
+.btn-out:hover{border-color:var(--navy)}
+.btn-wa{background:#1FA855;color:#fff}
+.btn-wa:hover{background:#178A45}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .svc.rv.in{transition:transform .35s var(--ease),box-shadow .35s,border-color .35s,opacity .8s;transition-delay:0s}
 
-/* Hero */
-.hero{background:radial-gradient(1000px 600px at 82% 40%,#1e3a82 0%,transparent 60%),linear-gradient(160deg,var(--deep),var(--night));color:#fff;padding:96px 0 110px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:560px;height:560px;border-radius:50%;border:2px solid #d9a93f33}
-.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:400px;height:400px;border-radius:50%;border:2px solid #d9a93f22}
-.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
-.tag{display:inline-flex;align-items:center;gap:12px;font-weight:600;color:var(--gold-l);font-size:.95rem;margin-bottom:26px}
-.tag::before{content:"";width:44px;height:2px;background:var(--grad)}
-h1{font-size:clamp(2.5rem,5.8vw,4.6rem);line-height:1.05;font-weight:800;letter-spacing:-.03em;margin-bottom:26px}
-h1 .gtext{display:block}
-.hero p.sub{font-size:1.2rem;color:var(--soft);max-width:46ch;margin-bottom:38px}
-.btns{display:flex;gap:14px;flex-wrap:wrap}
-.hero-meta{display:flex;gap:34px;flex-wrap:wrap;margin-top:48px;padding-top:26px;border-top:1px solid #ffffff22}
-.hero-meta div{font-size:.9rem;color:var(--soft)}
-.hero-meta b{display:block;color:#fff;font-size:1.05rem;font-weight:600}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.9);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header.scrolled{border-color:var(--line);box-shadow:0 10px 30px -22px rgba(8,17,43,.4)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.brand img{height:52px;width:auto}
+nav ul{display:flex;gap:4px;list-style:none;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:15px;padding:10px 13px;border-radius:999px;transition:color .2s,background .2s}
+nav a:hover,nav a.active{color:var(--gd)}
+nav .btn{margin-left:10px;padding:11px 22px;min-height:44px;font-size:14.5px}
+nav .btn:hover{color:var(--night)}
+.menu-btn{display:none;background:none;border:0;width:46px;height:46px;cursor:pointer;border-radius:12px}
+.menu-btn span{display:block;width:22px;height:2px;background:var(--navy);margin:5px auto;transition:.3s var(--ease)}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.progress{position:absolute;left:0;bottom:-1px;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--grad)}
 
-/* Portrait: the one memorable element */
-.portrait{position:relative;width:min(100%,430px);aspect-ratio:1;margin:0 auto}
-.portrait .crescent{position:absolute;inset:-22px;border-radius:50%;border:18px solid var(--gold);border-top-color:transparent;border-left-color:transparent;transform:rotate(-12deg)}
-.portrait .crescent.b{inset:-40px;border:12px solid #fff;border-bottom-color:transparent;border-right-color:transparent;opacity:.16;transform:rotate(-20deg)}
-.portrait img{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;object-fit:cover;border:10px solid var(--paper);display:block;box-shadow:0 30px 80px #00000066}
-.portrait .spark{position:absolute;z-index:2;right:-6px;top:6px;width:64px;height:64px;color:var(--gold-l)}
-.badge{position:absolute;z-index:3;left:-14px;bottom:34px;background:#fff;color:var(--navy);padding:14px 20px;border-radius:16px;box-shadow:0 16px 40px #00000040;font-weight:700;line-height:1.25;font-size:.95rem}
-.badge small{display:block;font-weight:500;color:var(--muted);font-size:.8rem}
+/* hero */
+.hero{background:radial-gradient(1100px 640px at 82% 38%,#1e3a82 0%,transparent 62%),linear-gradient(160deg,var(--deep),var(--night));color:#fff;overflow:hidden;padding:0}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:26px 26px;mask-image:radial-gradient(ellipse at 30% 50%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 30% 50%,#000 10%,transparent 70%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:92px;padding-bottom:112px}
+.pill{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;font-weight:500;color:#E5EAF7;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:7px 16px 7px 8px;border-radius:999px}
+.pill b{background:var(--grad);color:var(--night);font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:.04em}
+.hero h1{font-size:clamp(40px,5.4vw,70px);font-weight:800;margin:26px 0 22px;letter-spacing:-.035em}
+.rot{display:grid}
+.rot span{grid-area:1/1;opacity:0;transform:translateY(40%);transition:opacity .5s var(--ease),transform .5s var(--ease);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+.rot span.on{opacity:1;transform:none}
+.rot span.off{opacity:0;transform:translateY(-40%)}
+.hero p.sub{color:#C4CDE8;font-size:19px;max-width:560px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.pillars{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:16px 30px;margin-top:44px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
+.pillars b{display:block;font-size:16px;font-weight:700}
+.pillars span{font-size:13.5px;color:var(--soft)}
+.portrait{position:relative;width:min(100%,440px);aspect-ratio:1;justify-self:center}
+.ring{position:absolute;border-radius:50%}
+.ring.r1{inset:-26px;border:18px solid var(--gold);border-top-color:transparent;border-left-color:transparent;transform:rotate(-12deg);animation:spin1 1.6s .2s var(--ease) both}
+.ring.r2{inset:-48px;border:12px solid rgba(255,255,255,.14);border-bottom-color:transparent;border-right-color:transparent;transform:rotate(-20deg);animation:spin2 1.6s .3s var(--ease) both}
+@keyframes spin1{from{transform:rotate(-140deg);opacity:0}}
+@keyframes spin2{from{transform:rotate(120deg);opacity:0}}
+.portrait .face{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:8px solid #fff;background:linear-gradient(180deg,#f6e3b0,#e9c67a);box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.portrait .face img{width:100%;height:100%;object-fit:cover}
+.spark{position:absolute;right:-6px;top:-30px;width:70px;height:70px;color:var(--gold);animation:tw 3.4s ease-in-out infinite}
+.spark svg{width:100%;height:100%}
+@keyframes tw{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(.82) rotate(18deg)}}
+.badge{position:absolute;z-index:2;display:flex;align-items:center;gap:12px;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;box-shadow:0 22px 44px -18px rgba(0,0,0,.6);font-size:13px;animation:float 6s ease-in-out infinite}
+.badge b{display:block;font-size:14.5px}
+.badge small{color:var(--mut)}
+.badge .bi{width:38px;height:38px;border-radius:12px;background:var(--cream);color:var(--gd);display:grid;place-items:center}
+.badge.b1{left:-40px;bottom:46px}
+.badge.b2{right:-46px;top:40%;animation-delay:-3s}
+.live{width:9px;height:9px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.2);display:inline-block;margin-right:6px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
-/* Sections */
-section{padding:104px 0}
-h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.12;font-weight:700;letter-spacing:-.025em;margin-bottom:28px;max-width:20ch}
-.kicker{font-weight:600;color:var(--gold-d);margin-bottom:12px;font-size:.98rem}
-.about .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
-.quote{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;font-weight:600;letter-spacing:-.02em;border-left:5px solid var(--gold);padding-left:26px}
-.lead{color:var(--muted);max-width:60ch;margin-bottom:18px}
-.lead:first-of-type{color:var(--ink);font-size:1.2rem;font-weight:500}
-.facts{display:flex;gap:40px;flex-wrap:wrap;margin-top:32px;padding-top:26px;border-top:2px solid var(--gold)}
-.facts div{font-size:.92rem;color:var(--muted)}
-.facts b{display:block;color:var(--navy);font-size:1.08rem}
+.marquee{background:var(--grad);color:var(--night);overflow:hidden;white-space:nowrap;padding:17px 0;font-weight:700;font-size:16.5px}
+.marquee .track{display:inline-flex;gap:28px;align-items:center;animation:mq 38s linear infinite;padding-right:28px}
+.marquee i{font-style:normal;opacity:.6}
+@keyframes mq{to{transform:translateX(-50%)}}
 
-.services{background:var(--cream)}
-.svc{display:grid;grid-template-columns:.9fr 1.3fr auto;gap:44px;align-items:center;padding:36px 0;border-top:1px solid #d8cfb5;transition:padding .25s}
-.svc:last-child{border-bottom:1px solid #d8cfb5}
-.svc:hover{padding-left:14px}
-.svc h3{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:700;letter-spacing:-.015em;line-height:1.2}
-.svc p{color:var(--muted);max-width:52ch}
-.svc small{display:inline-block;margin-top:10px;color:var(--gold-d);font-weight:600;font-size:.9rem}
-.svc a{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:2px solid var(--gold);padding-bottom:2px;white-space:nowrap}
+/* promise stats */
+.stats{padding:0;background:#fff;border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:40px 28px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-size:44px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.stat b i{font-style:normal;color:var(--gd);font-size:.55em;margin-left:4px;letter-spacing:0}
+.stat>span{display:block;margin-top:10px;color:var(--mut);font-size:15px}
 
-.featured{background:linear-gradient(160deg,var(--deep),var(--night));color:#fff}
-.featured h2{color:#fff}
-.fb-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-end;margin-bottom:12px}
-.fb-top h3{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.02em;line-height:1.1}
-.where{color:var(--gold-l);font-weight:600;margin:8px 0 14px}
-.fb-top p{color:var(--soft);max-width:54ch}
-.prods{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:#ffffff1f;border:1px solid #ffffff1f;border-radius:18px;overflow:hidden;margin-top:40px}
-.prod{display:block;background:var(--deep);padding:26px;text-decoration:none;transition:background .2s}
-.prod:hover{background:#13245a}
-.prod b{display:block;font-size:1.1rem;margin-bottom:4px}
-.prod small{color:var(--soft);font-size:.9rem}
-.prod:hover b{color:var(--gold-l)}
+/* about */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.quote{position:relative;background:var(--night);color:#fff;border-radius:28px;padding:48px 44px;overflow:hidden}
+.quote::before{content:"\201C";position:absolute;right:26px;top:-24px;font-size:200px;font-weight:800;color:rgba(217,169,63,.22);line-height:1}
+.quote p{font-size:clamp(24px,2.6vw,32px);font-weight:700;line-height:1.3;letter-spacing:-.02em;position:relative}
+.quote .by{display:flex;align-items:center;gap:14px;margin-top:28px}
+.quote .by img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.quote .by small{display:block;color:var(--soft)}
+.beliefs{list-style:none;display:grid;gap:14px;margin-top:28px}
+.beliefs li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.beliefs i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:var(--night)}
+.beliefs i svg{width:16px;height:16px;stroke-width:3}
+.beliefs b{display:block}
+.beliefs span{color:var(--mut);font-size:15px}
 
-.steps{list-style:none;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--navy)}
-.steps li{counter-increment:s;padding:34px 34px 10px 0;margin-right:34px;border-right:1px solid var(--line)}
-.steps li:last-child{border-right:0;margin-right:0}
-.steps li::before{content:counter(s);display:block;font-weight:800;font-size:3.6rem;line-height:1;margin-bottom:12px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.steps h3{font-size:1.35rem;margin-bottom:8px}
-.steps p{color:var(--muted)}
+/* services */
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.svc{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 34px;display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s;overflow:hidden}
+.svc::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--grad);transition:width .4s var(--ease)}
+.svc:hover{transform:translateY(-6px);box-shadow:0 34px 60px -34px rgba(8,17,43,.45);border-color:#e3cf9c}
+.svc:hover::after{width:100%}
+.sico{width:58px;height:58px;border-radius:16px;background:var(--navy);color:var(--gl);display:grid;place-items:center;margin-bottom:22px}
+.sico svg{width:26px;height:26px}
+.snum{position:absolute;right:30px;top:26px;font-size:54px;font-weight:800;color:var(--cream);letter-spacing:-.04em;line-height:1}
+.svc h3{font-size:24px;font-weight:700;margin-bottom:10px}
+.svc p{color:var(--mut);margin-bottom:18px}
+.svc ul{list-style:none;display:grid;gap:8px;margin-bottom:22px}
+.svc li{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.svc li svg{color:var(--gd);margin-top:3px;width:18px;height:18px;stroke-width:2.6}
+.best{display:inline-block;align-self:flex-start;font-size:13px;font-weight:600;color:var(--gd);background:var(--cream);border-radius:999px;padding:6px 14px;margin-bottom:22px}
+.slink{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;color:var(--navy)}
+.slink svg{transition:transform .3s var(--ease)}
+.svc:hover .slink svg{transform:translateX(5px)}
 
-.faq{background:var(--cream)}
-.faq details{border-top:1px solid #d8cfb5;max-width:860px}
-.faq details:last-of-type{border-bottom:1px solid #d8cfb5}
-.faq summary{cursor:pointer;padding:22px 0;font-weight:600;font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:18px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--gold-d);font-size:1.6rem;line-height:1;transition:transform .2s}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{color:var(--muted);padding:0 0 22px;max-width:64ch}
+/* growth check */
+.check{overflow:hidden}
+.check .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.check::before{content:"";position:absolute;right:-200px;top:-200px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(30,58,130,.7),transparent 65%);pointer-events:none}
+.check .wrap>*{position:relative}
+.qcard{background:#fff;color:var(--ink);border-radius:28px;padding:30px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.qlist{list-style:none;display:grid;gap:10px}
+.qz{display:grid;grid-template-columns:32px 1fr auto;gap:14px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:14px;transition:border-color .2s,background .2s}
+.qz.done{background:#FFFCF4;border-color:#ead9ad}
+.qn{width:32px;height:32px;border-radius:50%;background:var(--cream);color:var(--gd);display:grid;place-items:center;font-weight:700;font-size:14px}
+.qt{font-size:15px;font-weight:500}
+.seg{display:inline-flex;background:var(--cream);border-radius:999px;padding:4px}
+.seg button{border:0;background:none;cursor:pointer;font-weight:600;font-size:14px;padding:8px 16px;border-radius:999px;min-height:40px;min-width:56px;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"][data-v="1"]{background:var(--navy);color:#fff}
+.seg button[aria-pressed="true"][data-v="0"]{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(8,17,43,.15)}
+.result{margin-top:20px;display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center;background:var(--cream);border-radius:20px;padding:20px 22px}
+.gauge{position:relative;width:120px;height:120px}
+.gauge svg{width:120px;height:120px;transform:rotate(-90deg)}
+.gauge circle{fill:none;stroke-width:11}
+.gauge .bg{stroke:#ecdfbd}
+.gauge .fg{stroke:url(#gg);stroke-linecap:round;transition:stroke-dashoffset .8s var(--ease)}
+.gauge b{position:absolute;inset:0;display:grid;place-items:center;font-size:28px;font-weight:800}
+.result h4{font-size:18px;font-weight:700;margin-bottom:4px}
+.result p{color:var(--mut);font-size:14.5px}
+.result .btn{margin-top:12px;padding:11px 20px;min-height:44px;font-size:14.5px}
 
-.contact{background:radial-gradient(900px 500px at 15% 0%,#1e3a82 0%,transparent 60%),var(--night);color:#fff}
-.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:start}
-.contact h2{color:#fff;max-width:14ch}
-.contact .intro{color:var(--soft);max-width:44ch;margin-bottom:30px}
-.mail{display:block;font-weight:700;font-size:clamp(1.15rem,2.6vw,1.7rem);text-decoration:none;color:#fff;border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:4px;word-break:break-all}
-.phone{margin-top:20px;font-weight:600;color:var(--soft)}
-.phone a{color:#fff;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}
-.social{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;list-style:none;padding:0}
-.social a{font-weight:600;text-decoration:none;color:var(--soft)}
-.social a:hover{color:var(--gold-l)}
-.form{display:grid;gap:16px;background:#ffffff0d;border:1px solid #ffffff22;border-radius:22px;padding:34px}
-.form label{font-weight:600;font-size:.92rem;display:grid;gap:7px;color:#e6ecff}
-.form input,.form textarea{font:inherit;padding:14px 16px;border:1.5px solid #ffffff2e;border-radius:12px;background:#ffffff12;color:#fff}
-.form textarea{min-height:120px;resize:vertical}
-.form input:focus,.form textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px #d9a93f40}
-.form .note{font-size:.86rem;color:var(--soft)}
-.contact .wrap>*{min-width:0}
-.form input,.form textarea{width:100%;min-width:0;box-sizing:border-box}
-.fb-brand{display:flex;align-items:center;gap:16px;margin-bottom:6px;flex-wrap:wrap}
-.fb-brand h3{min-width:0;overflow-wrap:anywhere}
-@media (max-width:560px){.fb-logo img{height:52px}.fb-brand h3{font-size:1.8rem}}
-.fb-logo{flex:none;background:#fff;border-radius:14px;padding:8px 10px;line-height:0}
-.fb-logo img{height:64px;width:auto}
+/* case study */
+.case{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.shot{position:relative}
+.browser{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 50px 90px -40px rgba(8,17,43,.6);border:1px solid var(--line)}
+.browser .bar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:#F1EEE6;border-bottom:1px solid var(--line)}
+.browser .bar i{width:11px;height:11px;border-radius:50%;background:#E0D8C4}
+.browser .bar span{margin-left:12px;flex:1;background:#fff;border-radius:999px;font-size:12.5px;color:var(--mut);padding:5px 14px}
+.browser img{width:100%;height:auto}
+.shot .calc{position:absolute;right:-28px;bottom:-40px;width:46%;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -24px rgba(8,17,43,.55);border:4px solid #fff}
+.tag{display:inline-block;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--cream);color:var(--gd);margin-bottom:14px}
+.case h3{font-size:clamp(28px,3vw,38px);font-weight:800;margin-bottom:12px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0 28px}
+.ba div{border-radius:16px;padding:18px}
+.ba .bf{background:#F3F1EC}
+.ba .af{background:var(--night);color:#fff}
+.ba h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+.ba .bf h4{color:var(--mut)}
+.ba .af h4{color:var(--gl)}
+.ba ul{list-style:none;display:grid;gap:7px;font-size:14px}
+.ba .bf li::before{content:"– ";color:var(--mut)}
+.ba .af li::before{content:"✓ ";color:var(--gl);font-weight:700}
+.actions-row{display:flex;gap:12px;flex-wrap:wrap}
 
-footer{background:#050b1c;color:#8d9cc4;padding:30px 0 40px;font-size:.9rem}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.wa{position:fixed;right:18px;bottom:18px;z-index:40;background:var(--grad);color:var(--night);padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 10px 30px #0000005a;font-size:.95rem}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+.step{padding:0 28px 0 0;position:relative}
+.step::before{counter-increment:s;content:counter(s);display:block;font-size:84px;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+.step::after{content:"";position:absolute;top:42px;left:72px;right:24px;height:2px;background:repeating-linear-gradient(90deg,#e3cf9c 0 8px,transparent 8px 15px)}
+.step:last-child::after{display:none}
+.step h3{font-size:22px;font-weight:700;margin-bottom:8px}
+.step p{color:var(--mut)}
 
-/* One orchestrated load moment in the hero */
-@media (prefers-reduced-motion:no-preference){
-  .hero .wrap>div:first-child>*{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
-  .hero .wrap>div:first-child>*:nth-child(2){animation-delay:.08s}
-  .hero .wrap>div:first-child>*:nth-child(3){animation-delay:.16s}
-  .hero .wrap>div:first-child>*:nth-child(4){animation-delay:.24s}
-  .hero .wrap>div:first-child>*:nth-child(5){animation-delay:.32s}
-  .portrait{animation:pop 1s .15s cubic-bezier(.2,.7,.2,1) both}
-  .portrait .crescent{animation:spin 1.4s .2s cubic-bezier(.2,.7,.2,1) both}
-  @keyframes up{from{transform:translateY(28px);opacity:0}to{transform:none;opacity:1}}
-  @keyframes pop{from{transform:scale(.92);opacity:0}to{transform:none;opacity:1}}
-  @keyframes spin{from{transform:rotate(-120deg)}to{transform:rotate(-12deg)}}
+/* faq */
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.faq-list{display:grid;gap:12px}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;transition:border-color .2s,box-shadow .2s}
+details[open]{border-color:#e3cf9c;box-shadow:0 18px 36px -28px rgba(8,17,43,.4)}
+summary{list-style:none;cursor:pointer;padding:20px 22px;font-weight:600;font-size:16.5px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--cream);position:relative}
+summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--gd);transform:translate(-50%,-50%);transition:transform .3s var(--ease)}
+summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+details p{padding:0 22px 22px;color:var(--mut)}
+
+/* contact */
+.contact{background:radial-gradient(900px 520px at 12% 0%,#1e3a82 0%,transparent 60%),var(--night);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact h2{color:#fff}
+.info{display:grid;gap:12px;margin-top:30px}
+.info a{display:flex;align-items:center;gap:16px;text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px 18px;transition:border-color .2s,background .2s}
+.info a:hover{border-color:var(--gold);background:rgba(255,255,255,.08)}
+.ico{width:46px;height:46px;border-radius:14px;background:var(--grad);color:var(--night);display:grid;place-items:center;flex:none}
+.info small{display:block;color:var(--soft);font-size:13px}
+.info b{font-weight:600;word-break:break-all}
+form.cf{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:26px;padding:34px;display:grid;gap:16px}
+label{display:grid;gap:7px;font-weight:600;font-size:14px;color:#E6ECFF}
+input,select,textarea{font:inherit;font-size:15px;padding:13px 16px;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.07);color:#fff;width:100%;min-width:0;min-height:50px;transition:border-color .2s,box-shadow .2s}
+select option{color:var(--ink)}
+input::placeholder,textarea::placeholder{color:#8D99C2}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(217,169,63,.25)}
+textarea{min-height:120px;resize:vertical}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fbtns{display:flex;gap:12px;flex-wrap:wrap}
+.fbtns .btn{flex:1}
+.note{font-size:13px;color:var(--soft)}
+
+footer{background:#050b1f;color:var(--soft);font-size:14.5px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-top:34px;padding-bottom:34px}
+.foot img{height:44px;width:auto;background:#fff;border-radius:10px;padding:4px 8px}
+.foot nav ul{gap:0}
+.foot nav a{color:var(--soft);font-size:14px}
+.foot nav a:hover{color:var(--gl)}
+.legal{border-top:1px solid rgba(255,255,255,.07)}
+.legal .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px;font-size:12.5px;color:#7884AA}
+
+.wa{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(0,0,0,.35)}
+.wa svg{width:30px;height:30px}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;animation:pulse 2.4s ease-out infinite;z-index:-1}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+.totop{position:fixed;right:30px;bottom:96px;z-index:60;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;transform:translateY(10px)}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.totop svg{transform:rotate(-90deg)}
+.mbar{display:none}
+
+@media (max-width:1080px){
+  nav ul{gap:0} nav a{padding:10px 9px;font-size:14.5px}
+  .about .wrap,.check .wrap,.case,.faq-wrap,.contact .wrap{grid-template-columns:1fr}
+  .shot .calc{right:8px}
+  .case{gap:80px}
 }
-
 @media (max-width:900px){
+  header nav ul{position:absolute;top:80px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:stretch;padding:8px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 30px 40px -30px rgba(0,0,0,.3);display:none}
+  header nav ul.open{display:flex}
+  header nav li a{display:block;padding:14px 4px;font-size:16px;border-bottom:1px solid var(--line);border-radius:0}
+  header nav li .btn{margin:14px 0 0;border:0;border-radius:999px}
   .menu-btn{display:block}
-  .nav ul{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 24px 20px}
-  .nav ul.open{display:flex}
-  .nav ul a{display:block;padding:13px 0}
-  .nav ul .cta{text-align:center;margin-top:8px}
-  .nav img{height:46px}
-  section{padding:72px 0}
-  .hero{padding:56px 0 76px}
-  .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:48px}
-  .portrait{width:min(78%,340px);order:-1}
-  .badge{left:-6px}
-  .svc{grid-template-columns:1fr;gap:12px;padding:30px 0}
-  .svc:hover{padding-left:0}
-  .steps{grid-template-columns:1fr}
-  .steps li{border-right:0;margin-right:0;padding:28px 0 6px;border-bottom:1px solid var(--line)}
-  .form{padding:24px}
+  .hero .wrap{grid-template-columns:1fr;padding-top:60px;padding-bottom:90px;gap:80px}
+  .portrait{width:min(78%,360px)}
+  .badge.b1{left:-24px} .badge.b2{right:-30px}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat{padding:28px 20px}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .sgrid,.steps{grid-template-columns:1fr}
+  .step{padding:0 0 36px}
+  .step::after{display:none}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  section{padding:78px 0}
+  .brand img{height:44px}
+  .hero h1{font-size:clamp(36px,10.5vw,46px)}
+  .hero p.sub{font-size:17px}
+  .hero .actions .btn{flex:1}
+  .pillars{grid-template-columns:1fr 1fr}
+  .badge{padding:9px 12px;font-size:12px} .badge b{font-size:13px} .badge .bi{width:32px;height:32px}
+  .badge.b1{left:-14px;bottom:10px} .badge.b2{right:-14px}
+  .stat b{font-size:34px}
+  .quote{padding:34px 26px}
+  .svc{padding:28px 24px}
+  .snum{font-size:42px;right:22px}
+  .qcard{padding:18px}
+  .qz{grid-template-columns:28px 1fr;gap:10px 12px}
+  .qn{width:28px;height:28px;font-size:13px}
+  .seg{grid-column:2;justify-self:start}
+  .result{grid-template-columns:1fr;justify-items:start}
+  .ba{grid-template-columns:1fr}
+  .shot .calc{width:52%;bottom:-36px;right:-6px}
+  form.cf{padding:22px}
+  .frow{grid-template-columns:1fr}
+  .wa,.totop{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font-weight:600;font-size:14.5px;text-decoration:none}
+  .mbar .m1{background:var(--cream)} .mbar .m2{background:#1FA855;color:#fff} .mbar .m3{background:var(--grad);color:var(--night)}
+  .mbar svg{width:18px;height:18px}
+  body{padding-bottom:78px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none}
 }
 </style>
 </head>
-<body>
-<header>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#f0cd74"/><stop offset="1" stop-color="#b8861b"/></linearGradient></defs></svg>
+
+<header id="hdr">
   <div class="wrap nav">
-    <a href="#top" aria-label="Biz With Aman, home"><img src="logo.png" alt="Biz With Aman logo"></a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <a class="brand" href="#top" aria-label="Biz With Aman home"><img src="logo-sm.png" alt="Biz With Aman" width="440" height="201"></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     <nav aria-label="Main">
       <ul id="menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#work">Services</a></li>
-        <li><a href="#featured">Featured</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#growth-check">Growth check</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a class="cta" href="#contact">Book a call</a></li>
+        <li><a class="btn btn-gold" href="#contact">Book a free call</a></li>
       </ul>
     </nav>
   </div>
+  <div class="progress" id="progress"></div>
 </header>
 
-<main id="top">
-  <div class="hero">
-    <div class="wrap">
-      <div>
-        <p class="tag">Business, growth, success</p>
-        <h1>Grow your business with a plan <span class="gtext">that actually works.</span></h1>
-        <p class="sub">I'm Aman. I help founders and small businesses build a clear strategy, a steady pipeline and a brand people trust.</p>
-        <div class="btns">
-          <a class="btn gold" href="#contact">Book a free call</a>
-          <a class="btn line" href="#work">See how I help</a>
-        </div>
-        <div class="hero-meta">
-          <div><b>Strategy</b>Clear 90-day plans</div>
-          <div><b>Growth</b>Sales and marketing</div>
-          <div><b>Brand</b>Be known for your work</div>
-        </div>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><b>FREE</b> 30-minute strategy call · India &amp; worldwide</span>
+      <h1>Grow your business with a <span class="rot" aria-hidden="true"><span class="on">clear plan</span><span>steady pipeline</span><span>website that sells</span><span>trusted brand</span></span><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">clear plan</span> that actually works.</h1>
+      <p class="sub">I&rsquo;m Aman. I help founders, manufacturers and small businesses find the one or two things holding growth back, fix them first, and build a routine that keeps results coming.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#contact">Book a free call <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="#growth-check">Take the 1-minute growth check</a>
       </div>
-      <div class="portrait">
-        <span class="crescent b"></span><span class="crescent"></span>
-        <img src="aman.jpg" alt="Portrait of Aman">
-        <svg class="spark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M50 0C54 30 70 46 100 50 70 54 54 70 50 100 46 70 30 54 0 50 30 46 46 30 50 0Z"/></svg>
-        <div class="badge">Aman<small>Business and growth consultant</small></div>
+      <div class="pillars">
+        <div><b>Strategy</b><span>Clear 90-day plans</span></div>
+        <div><b>Growth</b><span>Sales and marketing</span></div>
+        <div><b>Digital</b><span>Websites that bring enquiries</span></div>
+        <div><b>Brand</b><span>Be known for your work</span></div>
+      </div>
+    </div>
+    <div class="portrait">
+      <span class="ring r2" aria-hidden="true"></span><span class="ring r1" aria-hidden="true"></span>
+      <div class="face"><img src="aman.jpg" alt="Portrait of Aman" width="560" height="560"></div>
+      <span class="spark" aria-hidden="true"><svg viewBox="0 0 24 24" class="fill"><path d="M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0z"/></svg></span>
+      <div class="badge b1"><span class="bi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><span><b>Aman</b><small>Business &amp; growth consultant</small></span></div>
+      <a class="badge b2" href="#work" style="text-decoration:none"><span class="bi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span><span><b><span class="live"></span>Live project</b><small>Parkash Industries</small></span></a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span>Business strategy</span><i aria-hidden="true">✦</i><span>90-day plans</span><i aria-hidden="true">✦</i><span>Sales systems</span><i aria-hidden="true">✦</i><span>Marketing</span><i aria-hidden="true">✦</i><span>Business websites</span><i aria-hidden="true">✦</i><span>Google Business Profile</span><i aria-hidden="true">✦</i><span>WhatsApp lead systems</span><i aria-hidden="true">✦</i><span>Personal branding</span><i aria-hidden="true">✦</i><span>Export growth</span><i aria-hidden="true">✦</i><span>Business strategy</span><i aria-hidden="true">✦</i><span>90-day plans</span><i aria-hidden="true">✦</i><span>Sales systems</span><i aria-hidden="true">✦</i><span>Marketing</span><i aria-hidden="true">✦</i><span>Business websites</span><i aria-hidden="true">✦</i><span>Google Business Profile</span><i aria-hidden="true">✦</i><span>WhatsApp lead systems</span><i aria-hidden="true">✦</i><span>Personal branding</span><i aria-hidden="true">✦</i><span>Export growth</span><i aria-hidden="true">✦</i></div></div>
+
+<section class="stats" aria-label="How I work">
+  <div class="wrap">
+    <div class="stat rv"><b><span class="count" data-to="30">30</span><i>min</i></b><span>Free first call, no obligation</span></div>
+    <div class="stat rv" style="--d:80ms"><b><span class="count" data-to="90">90</span><i>days</i></b><span>Written plan you can start on</span></div>
+    <div class="stat rv" style="--d:160ms"><b><span class="count" data-to="1">1</span><i>day</i></b><span>Reply within one working day</span></div>
+    <div class="stat rv" style="--d:240ms"><b><span class="count" data-to="4">4</span><i>ways</i></b><span>To work together</span></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <figure class="quote rv">
+      <p>Growth is not about doing more. It is about doing the right few things, every week.</p>
+      <figcaption class="by"><img src="aman.jpg" alt="" width="52" height="52"><span><b>Aman</b><small>Founder, Biz With Aman</small></span></figcaption>
+    </figure>
+    <div class="rv" style="--d:120ms">
+      <span class="kick">About me</span>
+      <h2>Practical advice from someone who <em>does the work</em></h2>
+      <p class="lead">I work with owners who are busy running the business and don&rsquo;t have time to work out why growth has stalled. No jargon, no 80-page decks.</p>
+      <ul class="beliefs">
+        <li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></i><div><b>Fix the bottleneck first</b><span>Find the one or two things holding you back before adding anything new.</span></div></li>
+        <li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></i><div><b>Numbers over opinions</b><span>Weekly targets and a simple scorecard, so you always know what is working.</span></div></li>
+        <li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></i><div><b>Done, not just advised</b><span>From the plan to the website and the WhatsApp system, I build it with you.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="cream">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick">Services</span><h2>Four ways to <em>work together</em></h2></div>
+      <p class="lead">Start with one session or bring me in for ongoing growth. Every engagement starts with a free call.</p>
+    </div>
+    <div class="sgrid">
+<article class="svc rv" style="--d:0ms"><span class="sico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><span class="snum">01</span>
+<h3>Strategy sessions</h3><p>One focused session to review your business, set priorities for the next 90 days and leave with a written plan you can start on the same day.</p><ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Business review and the one or two real blockers</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Written 90-day plan with weekly actions</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Clear numbers to track</li></ul><span class="best">Best for owners who feel stuck</span>
+<a class="slink" href="#contact" data-svc="Strategy sessions">Book a session <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="svc rv" style="--d:80ms"><span class="sico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M6 16l4-5 3 3 6-8"/><path d="M15 6h4v4"/></svg></span><span class="snum">02</span>
+<h3>Growth consulting</h3><p>Ongoing monthly work on sales, marketing and operations. We set targets, track the numbers and adjust every week.</p><ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Monthly targets and weekly check-ins</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Sales follow-up and enquiry systems</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Monthly progress report</li></ul><span class="best">Best for businesses ready to scale</span>
+<a class="slink" href="#contact" data-svc="Growth consulting">Start growing <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="svc rv" style="--d:160ms"><span class="sico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span><span class="snum">03</span>
+<h3>Website &amp; digital setup</h3><p>A professional website that brings enquiries, plus the digital basics done properly so buyers can find and trust you.</p><ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Fast, mobile-first business website</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Domain, company email and Google Business Profile</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>WhatsApp enquiry and quote systems</li></ul><span class="best">Best for manufacturers and local businesses</span>
+<a class="slink" href="#contact" data-svc="Website &amp; digital setup">Get my website <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+<article class="svc rv" style="--d:240ms"><span class="sico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><span class="snum">04</span>
+<h3>Personal brand building</h3><p>Positioning, profile makeover and a simple content routine so the right clients find you and trust you before the first call.</p><ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Positioning and a one-line pitch</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>LinkedIn and Instagram profile makeover</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>A content routine you can keep</li></ul><span class="best">Best for founders, freelancers and professionals</span>
+<a class="slink" href="#contact" data-svc="Personal brand building">Build my brand <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    </div>
+  </div>
+</section>
+
+<section id="growth-check" class="check dark">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Free growth check</span>
+      <h2>How ready is your business to <em>grow?</em></h2>
+      <p class="lead">Answer six quick questions. You get a score and the first area to fix, and you can send the result to me for a free review.</p>
+    </div>
+    <div class="qcard rv" style="--d:120ms">
+      <ol class="qlist" id="quiz"><li class="qz"><span class="qn">1</span><span class="qt">I have a written plan for the next 90 days.</span>
+<span class="seg" role="group" aria-label="Answer for statement 1"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" data-v="0" aria-pressed="false">No</button></span></li><li class="qz"><span class="qn">2</span><span class="qt">I track my enquiries and sales numbers every week.</span>
+<span class="seg" role="group" aria-label="Answer for statement 2"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" data-v="0" aria-pressed="false">No</button></span></li><li class="qz"><span class="qn">3</span><span class="qt">My website brings me enquiries, not just a visiting card online.</span>
+<span class="seg" role="group" aria-label="Answer for statement 3"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" data-v="0" aria-pressed="false">No</button></span></li><li class="qz"><span class="qn">4</span><span class="qt">My Google Business Profile is complete and correct.</span>
+<span class="seg" role="group" aria-label="Answer for statement 4"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" data-v="0" aria-pressed="false">No</button></span></li><li class="qz"><span class="qn">5</span><span class="qt">Every new lead gets a follow-up within 24 hours.</span>
+<span class="seg" role="group" aria-label="Answer for statement 5"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" data-v="0" aria-pressed="false">No</button></span></li><li class="qz"><span class="qn">6</span><span class="qt">I share useful content about my business at least once a week.</span>
+<span class="seg" role="group" aria-label="Answer for statement 6"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" data-v="0" aria-pressed="false">No</button></span></li></ol>
+      <div class="result" aria-live="polite">
+        <div class="gauge"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="50"/><circle class="fg" id="gFg" cx="60" cy="60" r="50" stroke-dasharray="314.16" stroke-dashoffset="314.16"/></svg><b id="gNum">0</b></div>
+        <div><h4 id="rTitle">Answer the questions to see your score</h4><p id="rText">Your score out of 100 appears here as you answer.</p>
+        <a class="btn btn-wa" id="rWa" href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20want%20a%20free%20growth%20review." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true" class="fill"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.6 14.6 0 005.7 5c2.1.9 2.9 1 4 .8a3.3 3.3 0 002.2-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg> Send my result to Aman</a></div>
       </div>
     </div>
   </div>
+</section>
 
-  <section id="about" class="about">
-    <div class="wrap">
-      <p class="quote">Growth is not about doing more. It is about doing the right few things, every week.</p>
-      <div>
-        <p class="kicker">About me</p>
-        <h2>Practical advice from someone who has done the work</h2>
-        <p class="lead">I work with owners who are busy running the business and don't have time to work out why growth has stalled.</p>
-        <p class="lead">My approach is simple: find the one or two things holding you back, fix those first, then build a routine that keeps results coming. No jargon, no 80-page decks.</p>
-        <div class="facts">
-          <div><b>Add your experience</b>Years in business</div>
-          <div><b>Add your number</b>Businesses helped</div>
-          <div><b>Your city, India</b>Based in</div>
-        </div>
+<section id="work">
+  <div class="wrap case">
+    <div class="shot rv">
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>bizwithaman.com/parkash</span></div>
+        <img src="work-parkash.jpg" alt="Parkash Industries website home page" width="1200" height="532" loading="lazy"></div>
+      <img class="calc" src="work-parkash-calc.jpg" alt="Instant price calculator on the Parkash website" width="630" height="479" loading="lazy">
+    </div>
+    <div class="rv" style="--d:120ms">
+      <span class="kick">Featured work</span>
+      <h3>Parkash Industries</h3>
+      <span class="tag">Poultry equipment manufacturer · Jind, Haryana</span>
+      <p class="lead">A brand of ASN Poultech Pvt. Ltd. I built a full brand website that works as a 24-hour sales desk for farms in India and export buyers.</p>
+      <div class="ba">
+        <div class="bf"><h4>Before</h4><ul><li>Only a marketplace catalogue</li><li>No price or spec details for buyers</li><li>Enquiries scattered across calls</li></ul></div>
+        <div class="af"><h4>After</h4><ul><li>Brand site with 24-product catalogue</li><li>Instant price calculator</li><li>One-tap WhatsApp quotes, map &amp; FAQ</li></ul></div>
+      </div>
+      <div class="actions-row">
+        <a class="btn btn-navy" href="/parkash/">Visit the live site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-out" href="#contact" data-svc="Website &amp; digital setup">I want one like this</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="work" class="services">
-    <div class="wrap">
-      <p class="kicker">Services</p>
-      <h2>Three ways to work together</h2>
-      <div class="svc">
-        <h3>Strategy sessions</h3>
-        <div><p>One focused session to review your business, set priorities for the next 90 days and leave with a written plan you can start on the same day.</p><small>Best for owners who feel stuck</small></div>
-        <a href="#contact">Book a session</a>
-      </div>
-      <div class="svc">
-        <h3>Growth consulting</h3>
-        <div><p>Ongoing monthly work on sales, marketing and operations. We set targets, track the numbers and adjust every week.</p><small>Best for businesses ready to scale</small></div>
-        <a href="#contact">Start growing</a>
-      </div>
-      <div class="svc">
-        <h3>Personal brand building</h3>
-        <div><p>Positioning, profile makeover and a simple content routine so the right clients find you and trust you before the first call.</p><small>Best for founders, freelancers and professionals</small></div>
-        <a href="#contact">Build my brand</a>
+<section id="process" class="cream">
+  <div class="wrap">
+    <div class="head"><span class="kick">How it works</span><h2>From first call to <em>real results</em></h2></div>
+    <div class="steps">
+      <div class="step rv"><h3>Talk</h3><p>A free 30-minute call to understand your goals and where you are today.</p></div>
+      <div class="step rv" style="--d:100ms"><h3>Plan</h3><p>I send a clear proposal with what we&rsquo;ll do, how long it takes and what it costs.</p></div>
+      <div class="step rv" style="--d:200ms"><h3>Deliver</h3><p>We work through the plan together, with regular check-ins and honest progress reports.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq-wrap">
+    <div class="rv">
+      <span class="kick">FAQ</span>
+      <h2>Common <em>questions</em></h2>
+      <p class="lead">Something else on your mind? Message me on WhatsApp and I&rsquo;ll answer personally.</p>
+      <div class="actions-row" style="margin-top:26px"><a class="btn btn-wa" href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20have%20a%20question." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true" class="fill"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.6 14.6 0 005.7 5c2.1.9 2.9 1 4 .8a3.3 3.3 0 002.2-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg> Ask on WhatsApp</a></div>
+    </div>
+    <div class="faq-list"><details class="rv" open><summary>Who do you work with?<i aria-hidden="true"></i></summary><p>Founders, small business owners, manufacturers, freelancers and professionals who want clear priorities and steady growth without a large consulting budget.</p></details><details class="rv"><summary>How long does it take to see results?<i aria-hidden="true"></i></summary><p>You leave the first strategy session with a written 90-day plan. Most clients see their first changes in sales or enquiries within the first one to two months, depending on the business.</p></details><details class="rv"><summary>What does it cost?<i aria-hidden="true"></i></summary><p>It depends on the service and how much support you need. After the free call I send a clear proposal with the scope, timeline and price before you commit.</p></details><details class="rv"><summary>Can you build my website too?<i aria-hidden="true"></i></summary><p>Yes. I design and set up business websites with product catalogues, price calculators and WhatsApp enquiries, along with domain, company email and Google Business Profile. Parkash Industries is a live example.</p></details><details class="rv"><summary>Do you work with clients outside India?<i aria-hidden="true"></i></summary><p>Yes. Sessions run on video call, so location is not a limit.</p></details></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick" style="color:var(--gl)">Contact</span>
+      <h2>Let&rsquo;s talk about <em>your business</em></h2>
+      <p class="lead">Tell me what you&rsquo;re working on and where you want to be in a year. I reply within one working day.</p>
+      <div class="info">
+        <a href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 32 32" aria-hidden="true" class="fill"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.6 14.6 0 005.7 5c2.1.9 2.9 1 4 .8a3.3 3.3 0 002.2-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg></span><span><small>WhatsApp</small><b>Message me directly</b></span></a>
+        <a href="tel:+919817475759"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2"/></svg></span><span><small>Call</small><b>+91 98174 75759</b></span></a>
+        <a href="mailto:admin.advaman@gmail.com"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email</small><b>admin.advaman@gmail.com</b></span></a>
       </div>
     </div>
-  </section>
-
-  <section id="featured" class="featured">
-    <div class="wrap">
-      <p class="kicker" style="color:var(--gold-l)">Featured business</p>
-      <div class="fb-top">
-        <div>
-          <div class="fb-brand"><span class="fb-logo"><img src="/parkash/logo.png" alt="Parkash Industries logo" width="282" height="402"></span>
-          <h3>Parkash Industries</h3></div>
-          <div class="where">Manufacturer and exporter, Jind, Haryana</div>
-          <p>A poultry equipment manufacturer and brand of ASN Poultech Pvt. Ltd., supplying cages, fencing, cooling and feeding systems to poultry farms in India and abroad.</p>
-        </div>
-        <div class="btns"><a class="btn gold" href="/parkash/">Open Parkash Industries site</a><a class="btn line" href="https://www.parkashindustry.com/" target="_blank" rel="noopener">Old catalogue</a></div>
-      </div>
-      <div class="prods">
-        <a class="prod" href="/parkash/#products" ><b>Chicken cages</b><small>Poultry, brooder and GI cages</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Poultry cages</b><small>Layer, chick and grower cages</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Chain link fencing</b><small>Fencing and wire mesh</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Cooling pads</b><small>Evaporative cooling for sheds</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Poultry feeders</b><small>Chicken feeders</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Exhaust fans</b><small>Ventilation for poultry houses</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Power sprayers</b><small>HTP and stainless steel</small></a>
-        <a class="prod" href="/parkash/#products" ><b>Rubber mats</b><small>Mats for poultry cages</small></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="process">
-    <div class="wrap">
-      <p class="kicker">How it works</p>
-      <h2>From first call to real results</h2>
-      <ol class="steps">
-        <li><h3>Talk</h3><p>A free 30-minute call to understand your goals and where you are today.</p></li>
-        <li><h3>Plan</h3><p>I send a clear proposal with what we'll do, how long it takes and what it costs.</p></li>
-        <li><h3>Deliver</h3><p>We work through the plan together, with regular check-ins and honest progress reports.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="faq" class="faq">
-    <div class="wrap">
-      <p class="kicker">FAQ</p>
-      <h2>Common questions</h2>
-      <details><summary>Who do you work with?</summary><p>Founders, small business owners, freelancers and professionals who want clear priorities and steady growth without a large consulting budget.</p></details>
-      <details><summary>How long does it take to see results?</summary><p>You leave the first strategy session with a written 90-day plan. Most clients see their first changes in sales or enquiries within the first one to two months, depending on the business.</p></details>
-      <details><summary>What does it cost?</summary><p>It depends on the service and how much support you need. After the free call I send a clear proposal with the scope, timeline and price before you commit.</p></details>
-      <details><summary>Do you work with clients outside India?</summary><p>Yes. Sessions run on video call, so location is not a limit.</p></details>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <div>
-        <p class="kicker" style="color:var(--gold-l)">Contact</p>
-        <h2>Let's talk about your business</h2>
-        <p class="intro">Tell me what you're working on and where you want to be in a year. I reply within one working day.</p>
-        <a class="mail" href="mailto:admin.advaman@gmail.com">admin.advaman@gmail.com</a>
-        <p class="phone"><a href="tel:+919817475759">Call +91 98174 75759</a> &nbsp;or&nbsp; <a href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener">message on WhatsApp</a></p>
-        <ul class="social">
-          <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
-          <li><a href="https://x.com/" rel="noopener">X</a></li>
-        </ul>
-      </div>
-      <form class="form" id="cf">
+    <form class="cf rv" id="cf" style="--d:120ms" novalidate>
+      <div class="frow">
         <label>Your name<input name="n" required autocomplete="name"></label>
-        <label>Phone or email<input name="c" required autocomplete="email"></label>
-        <label>What do you need help with?<textarea name="m" required></textarea></label>
-        <button class="btn gold" type="submit">Send message</button>
-        <p class="note">This opens your email app with your message ready to send.</p>
-      </form>
-    </div>
-  </section>
+        <label>Phone or email<input name="c" required autocomplete="tel"></label>
+      </div>
+      <label>I&rsquo;m interested in
+        <select name="s"><option>Strategy sessions</option><option>Growth consulting</option><option>Website &amp; digital setup</option><option>Personal brand building</option><option>Not sure yet</option></select>
+      </label>
+      <label>What do you need help with?<textarea name="m" placeholder="Your business, your goal for the next year, and what is holding you back…"></textarea></label>
+      <div class="fbtns">
+        <button class="btn btn-gold" type="submit"><svg viewBox="0 0 32 32" aria-hidden="true" class="fill"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.6 14.6 0 005.7 5c2.1.9 2.9 1 4 .8a3.3 3.3 0 002.2-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg> Send on WhatsApp</button>
+        <button class="btn btn-line" type="button" id="cfMail"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Send by email</button>
+      </div>
+      <p class="note">Your message opens in WhatsApp or your email app, ready to send.</p>
+    </form>
+  </div>
+</section>
 </main>
 
 <footer>
-  <div class="wrap"><span>&copy; <span id="yr">2026</span> Biz With Aman. All rights reserved.</span><span>Business, growth, success</span></div>
+  <div class="wrap foot">
+    <img src="logo-sm.png" alt="Biz With Aman" width="440" height="201" loading="lazy">
+    <nav aria-label="Footer"><ul style="display:flex;flex-wrap:wrap;list-style:none"><li><a href="#services">Services</a></li><li><a href="#growth-check">Growth check</a></li><li><a href="#work">Work</a></li><li><a href="/parkash/">Parkash Industries</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+  </div>
+  <div class="legal"><div class="wrap"><span>© <span id="yr">2026</span> Biz With Aman. All rights reserved.</span><span>Business · Growth · Success</span></div></div>
 </footer>
-<a class="wa" href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener">WhatsApp</a>
+
+<button class="totop" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+<a class="wa" href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true" class="fill"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.6 14.6 0 005.7 5c2.1.9 2.9 1 4 .8a3.3 3.3 0 002.2-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg></a>
+<div class="mbar">
+  <a class="m1" href="tel:+919817475759"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2"/></svg> Call</a>
+  <a class="m2" href="https://wa.me/919817475759?text=Hi%20Aman%2C%20I%20found%20you%20on%20bizwithaman.com" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true" class="fill"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 01-2.6-1.6 9.7 9.7 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.6 14.6 0 005.7 5c2.1.9 2.9 1 4 .8a3.3 3.3 0 002.2-1.5 2.7 2.7 0 00.2-1.5c-.1-.1-.3-.2-.6-.4z"/></svg> WhatsApp</a>
+  <a class="m3" href="#contact">Free call</a>
+</div>
+
 <script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-var mb=document.querySelector('.menu-btn'),mn=document.getElementById('menu');
-mb.addEventListener('click',function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
-mn.addEventListener('click',function(e){if(e.target.tagName==='A'){mn.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
-document.getElementById('cf').addEventListener('submit',function(e){e.preventDefault();var f=e.target;
-var b=encodeURIComponent('Name: '+f.n.value+'\nContact: '+f.c.value+'\n\n'+f.m.value);
-location.href='mailto:admin.advaman@gmail.com?subject='+encodeURIComponent('Enquiry from bizwithaman.com')+'&body='+b});
+(function(){
+  var PHONE='919817475759',EMAIL='admin.advaman@gmail.com';
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function $(s,c){return (c||document).querySelector(s)}
+  function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+  $('#yr').textContent=new Date().getFullYear();
+
+  var mb=$('#menuBtn'),menu=$('#menu');
+  mb.addEventListener('click',function(){var o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  menu.addEventListener('click',function(e){if(e.target.closest('a')){menu.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
+
+  var hdr=$('#hdr'),pr=$('#progress'),tt=$('#toTop'),tick=false;
+  function onScroll(){var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;hdr.classList.toggle('scrolled',y>10);pr.style.transform='scaleX('+(h>0?y/h:0)+')';tt.classList.toggle('show',y>900);tick=false}
+  addEventListener('scroll',function(){if(!tick){requestAnimationFrame(onScroll);tick=true}},{passive:true});onScroll();
+  tt.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+
+  var links=$$('header nav a[href^="#"]'),secs=links.map(function(a){return $(a.getAttribute('href'))}).filter(Boolean);
+  function count(el){var to=+el.dataset.to,t0=null;if(reduce){el.textContent=to;return}function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/1200),e=1-Math.pow(1-p,3);el.textContent=Math.round(to*e);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+  if('IntersectionObserver' in window){
+    var nio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+    secs.forEach(function(s){nio.observe(s)});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');$$('.count',e.target).forEach(count);io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    $$('.rv').forEach(function(el){io.observe(el)});
+  }else $$('.rv').forEach(function(el){el.classList.add('in')});
+
+  var words=$$('.rot span'),wi=0;
+  if(words.length&&!reduce)setInterval(function(){var a=words[wi];a.classList.remove('on');a.classList.add('off');wi=(wi+1)%words.length;var b=words[wi];b.classList.remove('off');void b.offsetWidth;b.classList.add('on');setTimeout(function(){a.classList.remove('off')},500)},2400);
+
+  /* growth check */
+  var items=$$('.qz'),ans={},C=314.16;
+  var AREAS=['a written 90-day plan','tracking your numbers weekly','a website that brings enquiries','your Google Business Profile','fast lead follow-up','a regular content routine'];
+  function score(){
+    var n=Object.keys(ans).length,yes=0,firstNo=-1;
+    items.forEach(function(it,i){if(ans[i]===1)yes++;else if(ans[i]===0&&firstNo<0)firstNo=i});
+    var pct=Math.round(yes/items.length*100);
+    $('#gNum').textContent=n?pct:0;$('#gFg').style.strokeDashoffset=C*(1-(n?pct:0)/100);
+    var t,x;
+    if(!n){t='Answer the questions to see your score';x='Your score out of 100 appears here as you answer.'}
+    else if(n<items.length){t='Keep going: '+n+' of '+items.length+' answered';x='Answer all six to get your first area to fix.'}
+    else if(pct>=84){t='Strong foundations';x='You have the basics in place. The next step is scaling what already works.'}
+    else if(pct>=50){t='Good base, clear gaps';x='Start with '+AREAS[firstNo]+'. Fixing that first usually gives the quickest result.'}
+    else{t='Big room to grow';x='Start with '+AREAS[firstNo]+'. A 90-day plan will put the rest in order.'}
+    $('#rTitle').textContent=t;$('#rText').textContent=x;
+    var msg='Hi Aman, I took the growth check on bizwithaman.com.\nScore: '+(n?pct:'-')+'/100 ('+n+'/'+items.length+' answered)';
+    items.forEach(function(it,i){if(i in ans)msg+='\n'+(ans[i]?'Yes':'No')+': '+it.querySelector('.qt').textContent});
+    msg+='\n\nI would like a free review.';
+    $('#rWa').href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg);
+  }
+  items.forEach(function(it,i){$$('button',it).forEach(function(b){b.addEventListener('click',function(){ans[i]=+b.dataset.v;$$('button',it).forEach(function(x){x.setAttribute('aria-pressed',x===b)});it.classList.add('done');score()})})});
+
+  /* service links preselect */
+  var cf=$('#cf');
+  $$('[data-svc]').forEach(function(a){a.addEventListener('click',function(){var v=a.dataset.svc;for(var i=0;i<cf.s.options.length;i++)if(cf.s.options[i].text===v)cf.s.selectedIndex=i})});
+  function send(via){
+    if(!cf.n.value.trim()||!cf.c.value.trim()){(cf.n.value.trim()?cf.c:cf.n).focus();return}
+    var msg='Hi Aman,\n\nName: '+cf.n.value+'\nContact: '+cf.c.value+'\nInterested in: '+cf.s.value+'\n\n'+(cf.m.value||'');
+    if(via==='mail')location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Enquiry from bizwithaman.com: '+cf.s.value)+'&body='+encodeURIComponent(msg);
+    else window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg),'_blank','noopener');
+  }
+  cf.addEventListener('submit',function(e){e.preventDefault();send('wa')});
+  $('#cfMail').addEventListener('click',function(){send('mail')});
+})();
 </script>
 </body>
 </html>
