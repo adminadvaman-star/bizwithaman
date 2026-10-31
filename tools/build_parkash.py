@@ -52,7 +52,7 @@ NSKU = sum(len(c[4]) for c in CATS)
 
 GALLERY = [
  ("2025/9/545536046/XA/FD/AE/60024860/chicken-cage","Layer cage system in operation"),
- ("2023/9/347713297/EG/JI/CE/60024860/layer-poultry-cage","Long-row cage shed"),
+ ("2023/9/347712571/XX/FY/PG/60024860/chicken-cage","Layer hens in cage rows"),
  ("2024/12/476400797/UG/TG/DG/60024860/evaporative-cooling-pad","Cooling pad wall"),
  ("2025/9/545537570/LJ/RA/AY/60024860/layer-poultry-cage","A-frame layer cages"),
  ("2023/8/333916413/SL/LI/YK/60024860/cooling-fan","50 inch exhaust fan"),
